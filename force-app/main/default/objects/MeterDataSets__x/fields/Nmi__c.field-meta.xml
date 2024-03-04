@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nmi__c</fullName>
+    <description>Nmi</description>
+    <externalDeveloperName>Nmi</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Nmi</label>
+    <length>128</length>
+    <referenceTargetField>Connection_Point__c.NMI__c</referenceTargetField>
+    <referenceTo>Connection_Point__c</referenceTo>
+    <relationshipLabel>MeterDataSets</relationshipLabel>
+    <relationshipName>MeterDataSets</relationshipName>
+    <type>IndirectLookup</type>
+</CustomField>

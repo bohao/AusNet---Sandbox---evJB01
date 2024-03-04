@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Due_Notif_Date_fx__c</fullName>
+    <externalId>false</externalId>
+    <formula>/* 2 Business Days after Invoice_Payment_Due_Date__c */
+/* https://salesforce.stackexchange.com/questions/91880/date-formula-to-calculate-date-excluding-weekends */
+CASE(
+MOD(Invoice_Payment_Due_Date__c - DATE(1900, 1, 7), 7),
+0, (Invoice_Payment_Due_Date__c ) + 2 + FLOOR((2-1)/5)*2,
+1, (Invoice_Payment_Due_Date__c ) + 2 + FLOOR((2)/5)*2,
+2, (Invoice_Payment_Due_Date__c ) + 2 + FLOOR((2+1)/5)*2,
+3, (Invoice_Payment_Due_Date__c ) + 2 + FLOOR((2+2)/5)*2,
+4, (Invoice_Payment_Due_Date__c ) + 2 + FLOOR((2+3)/5)*2,
+5, (Invoice_Payment_Due_Date__c ) + 2 + CEILING((2)/5)*2,
+6, (Invoice_Payment_Due_Date__c ) - IF(2&gt;0,1,0) + 2 + CEILING((2)/5)*2,
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Invoice Due Notification Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

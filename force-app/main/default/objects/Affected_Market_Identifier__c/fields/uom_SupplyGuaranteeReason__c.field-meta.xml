@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>uom_SupplyGuaranteeReason__c</fullName>
+    <description>Field to be deprecated.</description>
+    <externalId>false</externalId>
+    <label>Supply Guarantee Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Life Support</fullName>
+                <default>false</default>
+                <label>Life Support</label>
+            </value>
+            <value>
+                <fullName>Sensitive Load</fullName>
+                <default>false</default>
+                <label>Sensitive Load</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

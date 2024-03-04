@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Sent_and_basic_micro_fx__c</fullName>
+    <externalId>false</externalId>
+    <formula>/* 45 Business Days after Case status set */
+/* https://salesforce.stackexchange.com/questions/91880/date-formula-to-calculate-date-excluding-weekends */
+CASE(
+MOD(DATEVALUE(Case_Status_Set__c) - DATE(1900, 1, 7), 7),
+0, DATEVALUE(Case_Status_Set__c ) + 45 + FLOOR((45-1)/5)*2,
+1, DATEVALUE(Case_Status_Set__c ) + 45 + FLOOR((45)/5)*2,
+2, DATEVALUE(Case_Status_Set__c ) + 45 + FLOOR((45+1)/5)*2,
+3, DATEVALUE(Case_Status_Set__c ) + 45 + FLOOR((45+2)/5)*2,
+4, DATEVALUE(Case_Status_Set__c ) + 45 + FLOOR((45+3)/5)*2,
+5, DATEVALUE(Case_Status_Set__c ) + 45 + CEILING((45)/5)*2,
+6, DATEVALUE(Case_Status_Set__c ) - IF(45&gt;0,1,0) + 45 + CEILING((45)/5)*2,
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Offer Sent and basic micro fx</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

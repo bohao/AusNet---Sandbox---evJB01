@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMI_Ref__c</fullName>
+    <externalId>false</externalId>
+    <label>NMI Ref</label>
+    <length>255</length>
+    <referenceTo>NmiDataSets__x</referenceTo>
+    <relationshipLabel>Connection Points</relationshipLabel>
+    <relationshipName>Connection_Points</relationshipName>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>ExternalLookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Apps_New_Conns_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>DER Apps - New Conns</label>
+    <queue>DER_Apps_New_Conns</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

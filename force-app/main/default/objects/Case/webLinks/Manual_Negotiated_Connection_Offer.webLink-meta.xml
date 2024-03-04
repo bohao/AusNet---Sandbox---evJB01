@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Negotiated_Connection_Offer</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Manual Negotiated Connection Offer</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/loop__looplus?&amp;eid={!Case.Id}&amp;ddpIds={!$Setup.DDP_Settings__c.DDP_Id_Neg_Conn_Offer__c}&amp;deploy={!$Setup.DDP_Settings__c.Deploy_Id_Neg_Conn_Offer__c}&amp;attachIds={!Case.AttachmentIds__c}&amp;hidecontact=true&amp;filtertype=contains&amp;filter={!Case.Status}</url>
+</WebLink>

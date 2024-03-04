@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publish_Case_Status</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>DER_Application_Scenario__c</columns>
+    <columns>DER_Application_Size__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Cancelled_Reason__c</columns>
+    <columns>AEMO_Publish_Date__c</columns>
+    <columns>Submission_Status__c</columns>
+    <columns>AusNet_Owned_Meter__c</columns>
+    <columns>Existing_DER__c</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>Meter_fx__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Submission_Status__c</field>
+        <operation>equals</operation>
+        <value>Sent to EAI,Submitted with Exceptions,Submission Failed</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>New,More Info Required,Invoice Pending,Technical Assessment,Offer Sent,Installation Pending,Installation Validation,Cancelled</value>
+    </filters>
+    <label>Publish Case Status</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

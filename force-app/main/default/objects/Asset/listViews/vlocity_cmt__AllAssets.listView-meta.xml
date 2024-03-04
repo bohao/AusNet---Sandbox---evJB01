@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__AllAssets</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>CEC_ID__c</columns>
+    <columns>Conn_Point__c</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ASSET.INSTALL_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Assets</label>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Check_Abolishment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+    OR(
+        RecordType.Name = &quot;DER Application - Auto&quot;,
+        RecordType.Name = &quot;DER Application - Manual&quot;
+    ),
+
+    ISPICKVAL(Type, &quot;Abolishment&quot;),
+
+    ISCHANGED(Status),
+    NOT(ISPICKVAL(Status, &quot;New&quot;)),
+    NOT(ISPICKVAL(Status, &quot;Publish&quot;)),
+    NOT(ISPICKVAL(Status, &quot;Complete&quot;)),
+    NOT(ISPICKVAL(Status, &quot;Cancelled&quot;))
+)</errorConditionFormula>
+    <errorMessage>Error: Abolishment Cases can only be set to New, Publish, or Complete statuses</errorMessage>
+</ValidationRule>

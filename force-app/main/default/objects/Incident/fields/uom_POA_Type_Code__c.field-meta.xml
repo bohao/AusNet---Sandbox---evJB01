@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>uom_POA_Type_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>POA Type Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SP</fullName>
+                <default>false</default>
+                <label>SP</label>
+            </value>
+            <value>
+                <fullName>HV_N</fullName>
+                <default>false</default>
+                <label>HV_N</label>
+            </value>
+            <value>
+                <fullName>LV</fullName>
+                <default>false</default>
+                <label>LV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

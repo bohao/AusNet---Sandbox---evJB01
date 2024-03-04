@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fin_Qtr__c</fullName>
+    <description>New field created only for reporting purpose - DER ESC Performance Report</description>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(DATEVALUE(ClosedDate)), 
+1, &quot;Q3&quot;, 
+2, &quot;Q3&quot;, 
+3, &quot;Q3&quot;, 
+4, &quot;Q4&quot;, 
+5, &quot;Q4&quot;, 
+6, &quot;Q4&quot;, 
+7, &quot;Q1&quot;, 
+8, &quot;Q1&quot;, 
+9, &quot;Q1&quot;, 
+10, &quot;Q2&quot;, 
+11, &quot;Q2&quot;, 
+12, &quot;Q2&quot;, 
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fin Qtr</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

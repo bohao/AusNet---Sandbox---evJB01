@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_AC_Equipment_Sub_Type</fullName>
+    <active>true</active>
+    <description>AC Equipment Sub Type is required for Devices with Record Type &apos;AC Equipment - L2&apos;</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+ISBLANK(TEXT(AC_Equip_Sub_Type__c)),
+NOT(Legacy_Data__c)
+)</errorConditionFormula>
+    <errorDisplayField>AC_Equip_Sub_Type__c</errorDisplayField>
+    <errorMessage>AC Equipment Sub Type is blank. Please select the AC Equipment Sub Type.</errorMessage>
+</ValidationRule>

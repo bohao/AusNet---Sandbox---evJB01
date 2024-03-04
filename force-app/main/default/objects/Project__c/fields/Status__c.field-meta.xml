@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Status for the landing page of the community</description>
+    <externalId>false</externalId>
+    <label>Project Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SAPStatus__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>ProjectStatus</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>AWRP</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Awaiting response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LPSD</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Offer lapsed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMT</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>To be issued for construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WIPR</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>External construction pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WIPR</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Issued for construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAV</controllingFieldValue>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Supply available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>AWIN</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Action pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>DSNG</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Allocated for design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>CNCL</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PREL</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Completed initial assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Initial assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>REGI</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Payment received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>REGI</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Pending payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PREL</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Prelim estimate accepted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PRLP</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Prelim estimate expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>RJCT</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CLSE</controllingFieldValue>
+            <controllingFieldValue>SUSP</controllingFieldValue>
+            <controllingFieldValue>SUBD</controllingFieldValue>
+            <controllingFieldValue>PREQ</controllingFieldValue>
+            <controllingFieldValue>PAPD</controllingFieldValue>
+            <controllingFieldValue>APVD</controllingFieldValue>
+            <valueName>Suspended</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

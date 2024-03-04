@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Classification</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prelim Estimate</fullName>
+                <default>true</default>
+                <label>Prelim Estimate</label>
+            </value>
+            <value>
+                <fullName>Firm Offer Letter</fullName>
+                <default>false</default>
+                <label>Firm Offer Letter</label>
+            </value>
+            <value>
+                <fullName>Drawings</fullName>
+                <default>false</default>
+                <label>Drawings</label>
+            </value>
+            <value>
+                <fullName>Technical Specs</fullName>
+                <default>false</default>
+                <label>Technical Specs</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>ACCC form</fullName>
+                <default>false</default>
+                <label>ACCC form</label>
+            </value>
+            <value>
+                <fullName>CRAB form</fullName>
+                <default>false</default>
+                <label>CRAB form</label>
+            </value>
+            <value>
+                <fullName>Audit reports</fullName>
+                <default>false</default>
+                <label>Audit reports</label>
+            </value>
+            <value>
+                <fullName>Co-ordination letters</fullName>
+                <default>false</default>
+                <label>Co-ordination letters</label>
+            </value>
+            <value>
+                <fullName>Easements/ MOA</fullName>
+                <default>false</default>
+                <label>Easements/ MOA</label>
+            </value>
+            <value>
+                <fullName>Rebates</fullName>
+                <default>false</default>
+                <label>Rebates</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Design</fullName>
+                <default>false</default>
+                <label>Design</label>
+            </value>
+            <value>
+                <fullName>Leases</fullName>
+                <default>false</default>
+                <label>Leases</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Referrals</fullName>
+                <default>false</default>
+                <label>Referrals</label>
+            </value>
+            <value>
+                <fullName>Impact Assessments</fullName>
+                <default>false</default>
+                <label>Impact Assessments</label>
+            </value>
+            <value>
+                <fullName>Progress Reports</fullName>
+                <default>false</default>
+                <label>Progress Reports</label>
+            </value>
+            <value>
+                <fullName>Signed Contracts</fullName>
+                <default>false</default>
+                <label>Signed Contracts</label>
+            </value>
+            <value>
+                <fullName>Suppliers Quotations</fullName>
+                <default>false</default>
+                <label>Suppliers Quotations</label>
+            </value>
+            <value>
+                <fullName>Variations / Change Requested</fullName>
+                <default>false</default>
+                <label>Variations / Change Requested</label>
+            </value>
+            <value>
+                <fullName>Plan Of Subdivision</fullName>
+                <default>false</default>
+                <label>Plan Of Subdivision</label>
+            </value>
+            <value>
+                <fullName>Load Calculation</fullName>
+                <default>false</default>
+                <label>Load Calculation</label>
+            </value>
+            <value>
+                <fullName>Development Plans</fullName>
+                <default>false</default>
+                <label>Development Plans</label>
+            </value>
+            <value>
+                <fullName>Property Sketch/Site Plan</fullName>
+                <default>false</default>
+                <label>Property Sketch/Site Plan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

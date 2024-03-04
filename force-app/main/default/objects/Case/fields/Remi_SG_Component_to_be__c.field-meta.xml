@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remi_SG_Component_to_be__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>I request that the Superannuation Guarantee (SG) component of the back payment be paid to</inlineHelpText>
+    <label>SG Component to be payed to?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The Australian Prudential Regulation Authority (APRA) fund or Retirement Savings Account (RSA) I nominate</fullName>
+                <default>false</default>
+                <label>The Australian Prudential Regulation Authority (APRA) fund or Retirement Savings Account (RSA) I nominate</label>
+            </value>
+            <value>
+                <fullName>The self-managed super fund (SMSF) I nominate</fullName>
+                <default>false</default>
+                <label>The self-managed super fund (SMSF) I nominate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

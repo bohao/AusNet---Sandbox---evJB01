@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_w2c_Meter_Number__c</fullName>
+    <description>This is the meter number supplied by the customer on the relevant online form</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the meter number supplied by the customer on the relevant online form</inlineHelpText>
+    <label>Meter Number (W2C)</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

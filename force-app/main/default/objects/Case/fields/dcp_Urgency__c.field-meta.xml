@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Urgency__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(dcp_Days_left_to_Due_Date__c),&apos;&apos;,
+  IF(dcp_Days_left_to_Due_Date__c &lt;= 2,
+  IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Red Flag&quot;),
+   IF(AND(dcp_Days_left_to_Due_Date__c &gt; 2, dcp_Days_left_to_Due_Date__c &lt;= 5),
+   IMAGE(&quot;/img/samples/flag_yellow.gif&quot;,&quot;Yellow Flag&quot;),
+  IMAGE(&quot;/img/samples/flag_green.gif&quot;,&quot;Green Flag&quot;))))</formula>
+    <label>Urgency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Header__c</fullName>
+    <description>This field is shown as the header of the record in the compact layout and concatenated the Reference Number (Name) and the Property Address</description>
+    <externalId>false</externalId>
+    <formula>Name &amp; &quot; — &quot; &amp;  ProjectName__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Header</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

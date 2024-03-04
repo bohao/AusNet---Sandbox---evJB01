@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Customer_Type__c</fullName>
+    <description>Type of AusNet customer</description>
+    <externalId>false</externalId>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electricity</fullName>
+                <default>false</default>
+                <label>Electricity</label>
+            </value>
+            <value>
+                <fullName>Gas</fullName>
+                <default>false</default>
+                <label>Gas</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+                <label>Transmission</label>
+            </value>
+            <value>
+                <fullName>WVTNP</fullName>
+                <default>false</default>
+                <label>WVTNP</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

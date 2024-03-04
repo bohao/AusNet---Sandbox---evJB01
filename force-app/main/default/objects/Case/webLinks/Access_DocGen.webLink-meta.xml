@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Access_DocGen</fullName>
+    <availability>online</availability>
+    <description>Access to trigger DER Connection Offers on needs basis.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Access DocGen</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/loop__looplus?&amp;eid={!Case.Id}&amp;hidecontact=true&amp;attach=true&amp;sessionId={!$Api.Session_ID}&amp;autorun=false</url>
+</WebLink>

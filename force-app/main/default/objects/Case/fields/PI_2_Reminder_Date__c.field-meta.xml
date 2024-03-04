@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PI_2_Reminder_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>/* 40 Business Days after Offer_Accepted_Date__c  */
+/* https://salesforce.stackexchange.com/questions/91880/date-formula-to-calculate-date-excluding-weekends */
+CASE(
+MOD(Offer_Accepted_Date__c  - DATE(1900, 1, 7), 7),
+0, (Offer_Accepted_Date__c ) + 40 + FLOOR((40-1)/5)*2,
+1, (Offer_Accepted_Date__c ) + 40 + FLOOR((40)/5)*2,
+2, (Offer_Accepted_Date__c ) + 40 + FLOOR((40+1)/5)*2,
+3, (Offer_Accepted_Date__c ) + 40 + FLOOR((40+2)/5)*2,
+4, (Offer_Accepted_Date__c ) + 40 + FLOOR((40+3)/5)*2,
+5, (Offer_Accepted_Date__c ) + 40 + CEILING((40)/5)*2,
+6, (Offer_Accepted_Date__c ) - IF(40&gt;0,1,0) + 40 + CEILING((40)/5)*2,
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PI - 2 Reminder Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

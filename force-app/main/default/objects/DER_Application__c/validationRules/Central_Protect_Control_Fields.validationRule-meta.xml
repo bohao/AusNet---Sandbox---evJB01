@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Protect_Control_Fields</fullName>
+    <active>true</active>
+    <description>Fields in the Central Protection and Control section should only be populated when Central Protection and Control = Yes</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Central_Protection_Control__c, &quot;No&quot;),
+ISBLANK(TEXT(Central_Protection_Control__c)) 
+),
+OR(
+NOT(ISBLANK(Export_Limitation_kVA__c)),
+NOT(ISBLANK(Under_Freq_Protection__c)),
+NOT(ISBLANK(Under_Freq_Protection_Delay__c)),
+NOT(ISBLANK(Over_Freq_Protection__c)),
+NOT(ISBLANK(Undervolt_Protection__c)),
+NOT(ISBLANK(Undervolt_Protection_Delay__c)),
+NOT(ISBLANK(Overvolt_Protection_1__c)),
+NOT(ISBLANK(Overvolt_Protection_1_Delay__c)),
+NOT(ISBLANK(Overvolt_Protection_2__c)),
+NOT(ISBLANK(Rate_of_Change_of_Freq__c)),
+NOT(ISBLANK(Volt_Vector_Shift__c)),
+NOT(ISBLANK(Inter_Trip_Scheme__c)),
+NOT(ISBLANK(Neutral_Voltage_Displacement__c))
+)
+)</errorConditionFormula>
+    <errorDisplayField>Central_Protection_Control__c</errorDisplayField>
+    <errorMessage>Fields in the Central Protection and Control section should only be populated when Central Protection and Control = Yes</errorMessage>
+</ValidationRule>

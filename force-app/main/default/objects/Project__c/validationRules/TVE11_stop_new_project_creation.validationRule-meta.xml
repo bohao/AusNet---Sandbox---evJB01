@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_stop_new_project_creation</fullName>
+    <active>true</active>
+    <description>This validation rule is to prevent non admin users from creating a project manually be clicking on the &quot;New&quot; button</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+$Permission.TVE_11_Prevent_New_Project)</errorConditionFormula>
+    <errorMessage>You don’t have access to create a project via EnergyConnect, projects can only be created via online forms on the AusNet Services corporate website</errorMessage>
+</ValidationRule>

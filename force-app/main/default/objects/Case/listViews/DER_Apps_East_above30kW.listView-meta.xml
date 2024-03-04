@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Apps_East_above30kW</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Case_Status_Age_fx__c</columns>
+    <columns>DER_Application_Size__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>Site_fx__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Applicant_Name__c</columns>
+    <columns>CONTACT.ACCOUNT</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Existing_DER__c</columns>
+    <columns>Region__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Technical Assessment,Designer Validation</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>East</value>
+    </filters>
+    <filters>
+        <field>Total_System_Capacity_fx__c</field>
+        <operation>greaterThan</operation>
+        <value>30</value>
+    </filters>
+    <label>DER Apps - East (&gt;30kW)</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

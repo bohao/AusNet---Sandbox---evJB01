@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_to_MC</fullName>
+    <columns>NAME</columns>
+    <columns>Incident_Id_fx__c</columns>
+    <columns>Incident_Notifications__c</columns>
+    <columns>uom_Incident_Status__c</columns>
+    <columns>uom_Affected_Market_Identifier__c</columns>
+    <columns>uom_Aff_NMI_Status__c</columns>
+    <columns>MC_Sync__c</columns>
+    <columns>Notification_Pref__c</columns>
+    <columns>MC_Sync_History__c</columns>
+    <columns>MC_Sync_Queue__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MC_Sync__c</field>
+        <operation>equals</operation>
+        <value>Sync to MC,Sync to MC (Multi Incident),ETA Updated,ETR Updated</value>
+    </filters>
+    <label>Sync to MC</label>
+</ListView>

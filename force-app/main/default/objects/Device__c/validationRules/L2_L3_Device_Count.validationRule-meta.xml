@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_L3_Device_Count</fullName>
+    <active>true</active>
+    <description>Device Count must be between 1 - 999 (inclusive) for both Level 2, and Level 3 Devices</description>
+    <errorConditionFormula>AND(
+
+OR(
+ RecordType.Name = &quot;AC Equipment - L2&quot;,
+ RecordType.Name = &quot;DER Device - L3&quot;
+),
+
+OR(
+ Device_Count__c &lt; 1,
+ Device_Count__c &gt; 999
+),
+NOT(Legacy_Data__c)
+)</errorConditionFormula>
+    <errorDisplayField>Device_Count__c</errorDisplayField>
+    <errorMessage>Device Count is outside the permitted range of 1 - 999 (inclusive)</errorMessage>
+</ValidationRule>

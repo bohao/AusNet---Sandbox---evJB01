@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voltage_Rise_at_Max_PV_Output</fullName>
+    <active>true</active>
+    <description>Voltage Rise at Max PV Output % must be in the range of 0.10% - 2.00% (inclusive)</description>
+    <errorConditionFormula>AND(Total_System_Capacity__c&gt;30,OR(
+Volt_Rise_Max_PV_Output__c &lt; 0.0010,
+Volt_Rise_Max_PV_Output__c &gt; 0.0200
+))</errorConditionFormula>
+    <errorDisplayField>Volt_Rise_Max_PV_Output__c</errorDisplayField>
+    <errorMessage>Voltage Rise at Max PV Output % is outside the permitted range of 0.10% - 2.00% (inclusive)</errorMessage>
+</ValidationRule>

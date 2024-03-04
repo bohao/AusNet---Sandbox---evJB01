@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Case_Outcome__c</fullName>
+    <description>Outcome of Case</description>
+    <externalId>false</externalId>
+    <label>Case Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+            <value>
+                <fullName>Educated Customer</fullName>
+                <default>false</default>
+                <label>Educated Customer</label>
+            </value>
+            <value>
+                <fullName>External referral - Other</fullName>
+                <default>false</default>
+                <label>External referral - Other</label>
+            </value>
+            <value>
+                <fullName>External referral - Downer</fullName>
+                <default>false</default>
+                <label>External referral - Downer</label>
+            </value>
+            <value>
+                <fullName>External referral - Veg Management</fullName>
+                <default>false</default>
+                <label>External referral - Veg Management</label>
+            </value>
+            <value>
+                <fullName>External referral - Contractor</fullName>
+                <default>false</default>
+                <label>External referral - Contractor</label>
+            </value>
+            <value>
+                <fullName>No Customer Contact</fullName>
+                <default>false</default>
+                <label>No Customer Contact</label>
+            </value>
+            <value>
+                <fullName>No Further Action</fullName>
+                <default>false</default>
+                <label>No Further Action</label>
+            </value>
+            <value>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+                <label>Resolved</label>
+            </value>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>Refer to Contractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refer to Contractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

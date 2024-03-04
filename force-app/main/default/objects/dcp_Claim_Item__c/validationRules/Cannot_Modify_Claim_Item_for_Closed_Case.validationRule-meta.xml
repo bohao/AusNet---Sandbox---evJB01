@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Modify_Claim_Item_for_Closed_Case</fullName>
+    <active>true</active>
+    <description>Restricts users from modifying Claim Items when associated Case Status = Closed.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(dcp_Case__r.Status,&apos;Closed&apos;),
+OR (ISCHANGED(dcp_Age__c), ISCHANGED(dcp_Assessed_Amount__c), ISCHANGED(dcp_Case__c), ISCHANGED(dcp_Claim_Amount__c), ISCHANGED(Name), ISCHANGED(dcp_Make__c), ISCHANGED(dcp_Model__c), ISCHANGED(dcp_Original_Cost__c), ISCHANGED(dcp_Payment_Status__c), ISCHANGED(dcp_Type__c))
+)</errorConditionFormula>
+    <errorMessage>You cannot modify Claim Items when associated Case Status = Closed.</errorMessage>
+</ValidationRule>

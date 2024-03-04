@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>Salesforce Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Cloud</label>
+            </value>
+            <value>
+                <fullName>SiteCore</fullName>
+                <default>false</default>
+                <label>SiteCore</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocusignCustom</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>DocuSign</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR(&quot;/apex/dsfs__DocuSign_CreateEnvelope&quot;, null, [DSEID=0,SourceID=Project__c.Id,
+OCO=&quot;Edit&quot;,LA = &apos;0&apos;,RROS=&quot;1&quot;,CCRM=&apos;Signer 1~Customer;&apos;+&apos;Signer 2~Internal Project Manager&apos;,
+CCTM=&apos;Signer 1~Signer&apos;+&apos;Signer 2~Signer&apos;,LF =&apos;0&apos;,CRL=&apos;Email~&apos;+Project__c.PropertyOwnerEmail__c+&apos;;&apos;+&apos;Role~Signer 1;&apos;+Project__c.PropertyOwnerName__c+&apos;;&apos;+&apos;RoutingOrder~1,&apos;+Project__c.AplContact_Ck__c+&apos;Email~&apos;+Project__c.ProjOwnerEmail_fx__c+&apos;;&apos;+&apos;Role~Signer 2;&apos;+&apos;FirstName~&apos;+Project__c.ProjOwnerName_fx__c+&apos;;&apos;+&apos;RoutingOrder~2&apos;,RES=Project__c.DocuSignReminder_fx__c,CES=&apos;Contract for &apos;+Project__c.CMNumber__c+&apos;-&apos;+Project__c.ProjectName__c,CEM=&apos;— Do not reply to this email as this account is not monitored ---&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos;Hi &apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos; Re: &apos;+Project__c.CMNumber__c+&apos; - &apos;+Project__c.ProjectName__c+&apos;&lt;br/&gt;&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos; I am sending your Offer Letter&apos;+&apos;,&apos;+&apos; Contract and Invoice which are valid until  &apos;+Project__c.TodayPlus60Days_fx__c+&apos;.&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos; Next steps: complete the following before &apos;+Project__c.TodayPlus60Days_fx__c+&apos; to ensure the offer doesn’t expire:&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos;&lt;br/&gt;&apos;&amp;&apos;&lt;ul&gt;&lt;li&gt;Review the Offer Letter&lt;/li&gt;&lt;li&gt;Pay the Invoice&lt;/li&gt;&lt;li&gt;Sign the Contract&lt;/li&gt;&lt;/ul&gt;&apos;&amp;&apos;&lt;/br&gt;&apos;&amp;&apos;Click on the &apos;+&apos;&lt;a href=&quot;&apos;&amp;&apos;[[Data:QuickURL]]&apos;&amp;&apos;&quot;&gt;eSignature link&lt;/a&gt;&apos;&amp;&apos; to view your OfferLetter and Invoice and provide an electronic signature.&apos;&amp;&apos;&lt;br/&gt;&apos;+&apos;&lt;br/&gt;&apos;+&apos; For payment options click &apos;+&apos;&lt;a href =&quot;&apos;+Project__c.Make_a_payment_fx__c+&apos;&quot;&gt;here&lt;/a&gt;.&apos;+&apos;&lt;br/&gt;&apos;+&apos;&lt;br/&gt;&apos;+
+&apos; NOTE:&apos;+&apos;&lt;i&gt;&apos;+&apos; Once you have reviewed the Offer Letter if you choose to go contestable don’t provide an electronic signature for this contract - your AusNet Services representative will send you an updated Offer Letter and Contract.&apos;+&apos; Click &apos;+&apos;&lt;a href=&quot;&apos;+Project__c.TVE_Project_URL__c+&apos;&quot;&gt;here&lt;/a&gt;&apos; +&apos; to access EnergyConnect where you can select the option to Go Contestable and view a list of Accredited Service Providers.&apos;+&apos;&lt;/i&gt;&apos;+&apos;&lt;br/&gt;&apos;+&apos;&lt;br/&gt;&apos;+&apos; If you have enquiries regarding the invoice the Revenue Accounting team can be contacted by Email:&apos;+&apos;&lt;a href=&quot;&apos;+&apos;mailto:revenueaccounting@ausnetservices.com.au&apos;&amp;&apos;&quot;&gt;revenueaccounting@ausnetservices.com.au&lt;a/&gt;&apos;+&apos; or Phone: Toll Free Number 1800 572 277.&apos;+&apos;&lt;br/&gt;&apos;+&apos;&lt;br/&gt;&apos;+&apos; If you have any other enquiries contact me on the details below or via EnergyConnect, click &apos;+&apos;&lt;a href=&quot;&apos;+ Project__c.CommunityChatterLink__c+ &apos;&quot;&gt;here&lt;a/&gt;&apos;+&apos; to send me a message.&lt;br/&gt;&apos;+&apos;&lt;br/&gt;&apos;+&apos; Regards&apos;+&apos;&lt;br/&gt;&apos;+ Project__c.ProjOwnerName_fx__c+&apos;&lt;br/&gt;&apos;+Project__c.ProjOwnerMobPhone_fx__c,BRANDID=Project__c.DocuSignBrandId__c
+],false
+)}</url>
+</WebLink>

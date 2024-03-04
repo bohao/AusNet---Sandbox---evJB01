@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Offer Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Basic Micro EG MSO</fullName>
+                <default>false</default>
+                <label>Basic Micro EG MSO</label>
+            </value>
+            <value>
+                <fullName>Negotiated 0-5MW</fullName>
+                <default>false</default>
+                <label>Negotiated 0-5MW</label>
+            </value>
+            <value>
+                <fullName>Negotiated &gt;5MW NEA&amp;NMA</fullName>
+                <default>false</default>
+                <label>Negotiated &gt;5MW NEA&amp;NMA</label>
+            </value>
+            <value>
+                <fullName>Negotiated &gt;5MW NEA</fullName>
+                <default>false</default>
+                <label>Negotiated &gt;5MW NEA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

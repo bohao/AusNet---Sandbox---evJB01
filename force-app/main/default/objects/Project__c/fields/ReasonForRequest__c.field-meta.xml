@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonForRequest__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Road works</fullName>
+                <default>false</default>
+                <label>Road works</label>
+            </value>
+            <value>
+                <fullName>Building / construction works</fullName>
+                <default>false</default>
+                <label>Building / construction works</label>
+            </value>
+            <value>
+                <fullName>Underground assets</fullName>
+                <default>false</default>
+                <label>Underground assets</label>
+            </value>
+            <value>
+                <fullName>Estate / subdivisions</fullName>
+                <default>false</default>
+                <label>Estate / subdivisions</label>
+            </value>
+            <value>
+                <fullName>Building Works</fullName>
+                <default>false</default>
+                <label>Building Works</label>
+            </value>
+            <value>
+                <fullName>Transporting high load</fullName>
+                <default>false</default>
+                <label>Transporting high load</label>
+            </value>
+            <value>
+                <fullName>Excavation works</fullName>
+                <default>false</default>
+                <label>Excavation works</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

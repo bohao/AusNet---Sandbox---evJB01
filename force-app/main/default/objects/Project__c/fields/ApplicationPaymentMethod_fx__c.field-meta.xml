@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApplicationPaymentMethod_fx__c</fullName>
+    <description>This field indicates the payment method for the initial fee of the project, can take the following possible values:
+* PAYNOW: The customer has paid the application in Westpac from its creation in Sitecore
+* PAYLATER: The customer requested an invoice to pay in the bank or another payment method.
+* NOPAYMENT: The project work code is except to pay an initial fee, Initially for 1016 and 1526.
+
+Injunction with the contestability type and offer type, it is used to identify the set of status available in the progress bar.</description>
+    <externalId>false</externalId>
+    <formula>IF(  OR(WorkCode__c = &apos;1016&apos;, WorkCode__c = &apos;1526&apos;), &apos;NOPAYMENT&apos;, IF ( ISBLANK( PaymentReferenceNumber__c ) , &apos;PAYLATER&apos; , &apos;PAYNOW&apos;))</formula>
+    <label>Application Payment Method</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

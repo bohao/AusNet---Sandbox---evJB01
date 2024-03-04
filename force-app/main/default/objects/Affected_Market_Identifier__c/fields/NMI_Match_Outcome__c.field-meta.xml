@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMI_Match_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>NMI Match Outcome</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NMI Matched</fullName>
+                <default>false</default>
+                <label>NMI Matched</label>
+            </value>
+            <value>
+                <fullName>NMI Not Matched</fullName>
+                <default>false</default>
+                <label>NMI Not Matched</label>
+            </value>
+            <value>
+                <fullName>Customer Matched</fullName>
+                <default>false</default>
+                <label>Customer Matched</label>
+            </value>
+            <value>
+                <fullName>Customer Not Matched: None Found</fullName>
+                <default>false</default>
+                <label>Customer Not Matched: None Found</label>
+            </value>
+            <value>
+                <fullName>Customer Not Matched: Multiple Found</fullName>
+                <default>false</default>
+                <label>Customer Not Matched: Multiple Found</label>
+            </value>
+            <value>
+                <fullName>Customer Matched: Already On Incident</fullName>
+                <default>false</default>
+                <label>Customer Matched: Already On Incident</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

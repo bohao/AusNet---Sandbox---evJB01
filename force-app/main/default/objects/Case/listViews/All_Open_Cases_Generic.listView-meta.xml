@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Cases_Generic</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>DER_Application_Scenario__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Site_fx__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Agreement_Type__c</columns>
+    <columns>Applicant_Email__c</columns>
+    <columns>Applicant_Type__c</columns>
+    <columns>DER_Application__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Open Cases</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

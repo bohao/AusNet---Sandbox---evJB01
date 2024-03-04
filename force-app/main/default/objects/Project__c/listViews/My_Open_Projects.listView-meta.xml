@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Projects</fullName>
+    <columns>NAME</columns>
+    <columns>ProjectName__c</columns>
+    <columns>SAPStatus__c</columns>
+    <columns>SAPStatusFlag__c</columns>
+    <columns>WorkCode__c</columns>
+    <columns>InternalDueDate__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>SAPStatus__c</field>
+        <operation>notEqual</operation>
+        <value>CLSE</value>
+    </filters>
+    <label>My Projects</label>
+</ListView>

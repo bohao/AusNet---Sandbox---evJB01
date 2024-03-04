@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Inv_Volt_Watt_Resp_Mode_Fields</fullName>
+    <active>true</active>
+    <description>The following fields can only be populated when Inv Volt Watt Response Mode = &quot;Enabled&quot;:
+Inv Watt Response V1, V2, V3, or V4; Inv Watt Response P at V1, V2, V3, or V4</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+NOT(ISPICKVAL(Inv_Volt_Watt_Response_Mode__c , &quot;Enabled&quot;)),
+
+OR(
+NOT(ISBLANK(Inv_Watt_Response_P_at_V1__c)),
+NOT(ISBLANK(Inv_Watt_Response_P_at_V2__c)),
+NOT(ISBLANK(Inv_Watt_Response_P_at_V3__c)),
+NOT(ISBLANK(Inv_Watt_Response_P_at_V4__c)),
+NOT(ISBLANK(Inv_Watt_Response_V1__c)),
+NOT(ISBLANK(Inv_Watt_Response_V2__c)),
+NOT(ISBLANK(Inv_Watt_Response_V3__c)),
+NOT(ISBLANK(Inv_Watt_Response_V4__c))
+),
+NOT(Legacy_Data__c)
+)</errorConditionFormula>
+    <errorDisplayField>Inv_Volt_Watt_Response_Mode__c</errorDisplayField>
+    <errorMessage>The following fields can only be populated when Inv Volt Watt Response Mode = &quot;Enabled&quot;:
+Inv Watt Response V1, V2, V3, or V4; Inv Watt Response P at V1, V2, V3, or V4</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Inverter_L3_Device</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( EAI_Type__c == &apos;Device_L3&apos;,
+ ISPICKVAL( Parent_Device__r.AC_Equip_Type__c , &apos;Non-Inverter&apos;),
+ NOT( ISPICKVAL( Device_Sub_Type__c , &apos;Other&apos;) )
+)</errorConditionFormula>
+    <errorMessage>For Non-Inverter AC Equipment, L3 Devices must set the Device Sub-Type to Other.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FE_Is_Flexible_Export_Assessment_Opt_in__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Boolean to show if customer has chosen to opt into flexible exports for solar installation</description>
+    <externalId>false</externalId>
+    <label>Flexible Exports Assessment Opt-in</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

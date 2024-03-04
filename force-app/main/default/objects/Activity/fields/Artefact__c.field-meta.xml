@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Artefact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Artefact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>ACT-F01: Value does not exist or does not an invoice</errorMessage>
+        <filterItems>
+            <field>Artefact__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Invoice</value>
+        </filterItems>
+        <filterItems>
+            <field>Artefact__c.Project__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.WhatId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Artefact__c</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>Activities</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

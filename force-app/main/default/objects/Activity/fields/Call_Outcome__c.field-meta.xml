@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Outcome__c</fullName>
+    <description>User captures the outcome of their Calls with Life Support Customers during incidents for power outage.</description>
+    <externalId>false</externalId>
+    <label>Call Outcome</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Spoke to customer - backup plan enacted, customer currently safe</fullName>
+                <default>false</default>
+                <label>Spoke to customer - backup plan enacted, customer currently safe</label>
+            </value>
+            <value>
+                <fullName>Spoke to customer - sent to DEECA</fullName>
+                <default>false</default>
+                <label>Spoke to customer - sent to DEECA</label>
+            </value>
+            <value>
+                <fullName>No answer - left voicemail</fullName>
+                <default>false</default>
+                <label>No answer - left voicemail</label>
+            </value>
+            <value>
+                <fullName>No answer - no voicemail</fullName>
+                <default>false</default>
+                <label>No answer - no voicemail</label>
+            </value>
+            <value>
+                <fullName>No answer - sent LSC SMS</fullName>
+                <default>false</default>
+                <label>No answer - sent LSC SMS</label>
+            </value>
+            <value>
+                <fullName>Spoke to customer - life support no longer required</fullName>
+                <default>false</default>
+                <label>Spoke to customer - life support no longer required</label>
+            </value>
+            <value>
+                <fullName>Multiple calls no answer - welfare check required, sent to DEECA</fullName>
+                <default>false</default>
+                <label>Multiple calls no answer - welfare check required, sent to DEECA</label>
+            </value>
+            <value>
+                <fullName>Incorrect number - welfare check required, no contact details</fullName>
+                <default>false</default>
+                <label>Incorrect number - welfare check required, no contact details</label>
+            </value>
+            <value>
+                <fullName>Incident Resolved - task closed</fullName>
+                <default>false</default>
+                <label>Incident Resolved - task closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Executives_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>dcp_Market_Identifier__c</columns>
+    <columns>dcp_Site_Address__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Queue</filterScope>
+    <label>Executives</label>
+    <queue>dcp_Executives</queue>
+    <sharedTo>
+        <role>Executives</role>
+    </sharedTo>
+</ListView>

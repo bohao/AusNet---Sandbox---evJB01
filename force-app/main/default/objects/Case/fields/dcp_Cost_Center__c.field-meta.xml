@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Cost_Center__c</fullName>
+    <externalId>false</externalId>
+    <label>Cost Center</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>12510</fullName>
+                <default>false</default>
+                <label>12510</label>
+            </value>
+            <value>
+                <fullName>13175</fullName>
+                <default>false</default>
+                <label>13175</label>
+            </value>
+            <value>
+                <fullName>22175</fullName>
+                <default>false</default>
+                <label>22175</label>
+            </value>
+            <value>
+                <fullName>23175</fullName>
+                <default>false</default>
+                <label>23175</label>
+            </value>
+            <value>
+                <fullName>33175</fullName>
+                <default>false</default>
+                <label>33175</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

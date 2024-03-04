@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FnP_DCP_SubType__c</fullName>
+    <externalId>false</externalId>
+    <label>SubType</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliment</fullName>
+                <default>false</default>
+                <label>Compliment</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>myHomeEnergy</fullName>
+                <default>false</default>
+                <label>myHomeEnergy</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Planned Outage</fullName>
+                <default>false</default>
+                <label>Planned Outage</label>
+            </value>
+            <value>
+                <fullName>Planned Outage Preference Management</fullName>
+                <default>false</default>
+                <label>Planned Outage Preference Management</label>
+            </value>
+            <value>
+                <fullName>Tariffs</fullName>
+                <default>false</default>
+                <label>Tariffs</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Unplanned Outages</fullName>
+                <default>false</default>
+                <label>Unplanned Outages</label>
+            </value>
+            <value>
+                <fullName>Vegetation Management</fullName>
+                <default>false</default>
+                <label>Vegetation Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

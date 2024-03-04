@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Power_Factor</fullName>
+    <active>false</active>
+    <description>Equipment Power Factor (PF) cannot be greater than 1</description>
+    <errorConditionFormula>Equip_Power_Factor__c &gt; 1</errorConditionFormula>
+    <errorDisplayField>Equip_Power_Factor__c</errorDisplayField>
+    <errorMessage>Equipment Power Factor (PF) cannot be greater than 1. Please update the value entered.</errorMessage>
+</ValidationRule>

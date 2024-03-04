@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Applications</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>DER_Application_Scenario__c</columns>
+    <columns>DER_Application_Size__c</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>Region__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Existing_DER__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>AusNet_Owned_Meter__c</columns>
+    <columns>Submission_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Technical Assessment</value>
+    </filters>
+    <filters>
+        <field>DER_Application_Size__c</field>
+        <operation>equals</operation>
+        <value>&gt; 30</value>
+    </filters>
+    <label>Completed Applications</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Check_Abolishment_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+    OR(
+        RecordType.Name = &quot;DER Application - Auto&quot;,
+        RecordType.Name = &quot;DER Application - Manual&quot;
+    ),
+
+    ISPICKVAL(Type, &quot;Abolishment&quot;),
+    NOT(ISPICKVAL(Origin, &quot;Direct Entry&quot;))
+)</errorConditionFormula>
+    <errorMessage>Error: Abolishment Cases may only originate as Direct Entry</errorMessage>
+</ValidationRule>

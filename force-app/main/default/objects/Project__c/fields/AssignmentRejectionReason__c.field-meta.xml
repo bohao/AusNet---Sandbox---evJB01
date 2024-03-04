@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssignmentRejectionReason__c</fullName>
+    <description>Assignment Rejection reason</description>
+    <externalId>false</externalId>
+    <label>Assignment Rejection Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ProjectAssigmentStatus__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>ProjectRejectionReasons</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>My workload is at capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>I have upcoming leave</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Requires different skills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Requires site visit - outside my travel zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Advised to reject by Manager</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

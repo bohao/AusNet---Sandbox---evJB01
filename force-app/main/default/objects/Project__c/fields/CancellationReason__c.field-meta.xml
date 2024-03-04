@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancellationReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Cancellation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pricing too high</fullName>
+                <default>false</default>
+                <label>Pricing too high</label>
+            </value>
+            <value>
+                <fullName>Not ready to build</fullName>
+                <default>false</default>
+                <label>Not ready to build</label>
+            </value>
+            <value>
+                <fullName>My requirements have changed</fullName>
+                <default>false</default>
+                <label>My requirements have changed</label>
+            </value>
+            <value>
+                <fullName>3rd party restrictions</fullName>
+                <default>false</default>
+                <label>3rd party restrictions</label>
+            </value>
+            <value>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+                <label>Cancel</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

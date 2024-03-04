@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_New_Capacity__c</fullName>
+    <externalId>false</externalId>
+    <formula>Ph_A_New_Capacity__c + Ph_B_New_Capacity__c + Ph_C_New_Capacity__c + Ph_Unk_New_Capacity__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total New Capacity (kVA)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

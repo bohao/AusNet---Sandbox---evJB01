@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Offer_Sent</fullName>
+    <active>true</active>
+    <description>To set the Status to Offer Sent, please ensure: Agreement Type is populated, and Total System Capacity / Export are &gt;0 on the DER Application. You may need to check the Capacity / Export on related AC Equipment (inverter) records.</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Offer Sent&quot;),
+
+OR(
+ISBLANK(TEXT(Agreement_Type__c)),
+DER_Application__r.Total_System_Capacity__c = 0
+)
+
+)</errorConditionFormula>
+    <errorMessage>To set the Status to Offer Sent, please ensure Agreement Type is populated, and Total System Capacity is &gt;0 on the DER Application. You may need to check the Capacity on related AC Equipment (inverter) records.</errorMessage>
+</ValidationRule>

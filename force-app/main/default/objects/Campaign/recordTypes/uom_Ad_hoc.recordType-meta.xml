@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>uom_Ad_hoc</fullName>
+    <active>true</active>
+    <label>Ad-hoc</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unplanned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

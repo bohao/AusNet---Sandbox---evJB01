@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract</fullName>
+    <active>true</active>
+    <description>Record type for contract</description>
+    <label>Contract</label>
+    <picklistValues>
+        <picklist>Classification__c</picklist>
+        <values>
+            <fullName>Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed Contracts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InvoiceTypeLine1__c</picklist>
+        <values>
+            <fullName>Additional Design Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Site Visit Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond %28Ex GST%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Assessment Fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InvoiceTypeLine2__c</picklist>
+        <values>
+            <fullName>Additional Design Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Site Visit Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond %28Ex GST%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Assessment Fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InvoiceTypeLine3__c</picklist>
+        <values>
+            <fullName>Additional Design Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Site Visit Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond %28Ex GST%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Assessment Fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MaterialCodeLine1__c</picklist>
+        <values>
+            <fullName>CCAAA001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNAAA067</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MaterialCodeLine2__c</picklist>
+        <values>
+            <fullName>CCAAA001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNAAA067</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MaterialCodeLine3__c</picklist>
+        <values>
+            <fullName>CCAAA001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCAAA042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GNAAA067</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source__c</picklist>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SiteCore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Payment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

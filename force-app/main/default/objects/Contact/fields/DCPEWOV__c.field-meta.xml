@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCPEWOV__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to be populated by automation whenever associated EWOV case level reaches to stage 2, stage 3, or final stage and unchecked for other EWOV level</description>
+    <externalId>false</externalId>
+    <label>EWOV?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

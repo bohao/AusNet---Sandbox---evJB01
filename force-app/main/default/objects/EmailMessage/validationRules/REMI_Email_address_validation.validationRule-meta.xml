@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REMI_Email_address_validation</fullName>
+    <active>true</active>
+    <description>Validation to restrict HR Coordinators from sending email from email address except</description>
+    <errorConditionFormula>FromAddress  &lt;&gt; &apos;employeepaymentreview@ausnetservices.com.au&apos; &amp;&amp;  $Profile.Name = &apos;HR Coordinator&apos;</errorConditionFormula>
+    <errorDisplayField>FromAddress</errorDisplayField>
+    <errorMessage>Please select the Remediation email id in FROM address</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REMI_Case_Contact_Name__c</fullName>
+    <description>Formula to populate contact first name and last name for web 2 case in Uppercase</description>
+    <externalId>false</externalId>
+    <formula>UPPER(dcp_w2c_First_Name__c)&amp; &quot; &quot; &amp; UPPER( dcp_w2c_Last_Name__c )&amp; &quot; &quot; &amp; UPPER(  SuppliedEmail )</formula>
+    <label>Case Contact Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

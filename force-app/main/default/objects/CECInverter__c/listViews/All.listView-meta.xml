@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>INVERTER_NUMBER__c</columns>
+    <columns>InverterMfr__c</columns>
+    <columns>InverterModel__c</columns>
+    <columns>Phase__c</columns>
+    <columns>IS_SOLAR__c</columns>
+    <columns>IS_BATTERY__c</columns>
+    <columns>INVERTER_ID__c</columns>
+    <columns>CEC_ID__c</columns>
+    <columns>NOMINAL_AC_POWER__c</columns>
+    <columns>CERT_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Records</label>
+</ListView>

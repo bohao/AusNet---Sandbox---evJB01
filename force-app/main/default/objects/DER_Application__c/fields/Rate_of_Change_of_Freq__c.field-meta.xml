@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_of_Change_of_Freq__c</fullName>
+    <description>Rate of change of frequency trip point (Hz/s).
+Permitted range is between 0 and 4 (inclusive)</description>
+    <externalId>false</externalId>
+    <label>Rate of Change of Frequency (RoCoF)</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

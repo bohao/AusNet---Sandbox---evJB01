@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAPStatus__c</fullName>
+    <defaultValue>&quot;REGI&quot;</defaultValue>
+    <description>Display of where the project is up to</description>
+    <externalId>false</externalId>
+    <label>SAP Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CMStatus</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_DER__c</fullName>
+    <description>To Check if there is an existing DER</description>
+    <externalId>false</externalId>
+    <formula>AND( OR( RecordType.DeveloperName == &apos;DER_App_Manual&apos;,
+         RecordType.DeveloperName == &apos;DER_App_Auto&apos;
+       ) ,
+     OR( ISPICKVAL( Type, &apos;Replacement&apos;),
+         ISPICKVAL( Type, &apos;Augmentation&apos;),
+         ISPICKVAL( Type, &apos;Upgrade&apos;),
+         ISPICKVAL( Type, &apos;Abolishment&apos;)
+       )
+   )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Existing DER</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

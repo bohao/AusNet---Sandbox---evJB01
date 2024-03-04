@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drawloop_Next4__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;SFCase:&quot; &amp; Id &amp; &quot;;DDPId:&quot; &amp; $Setup.DDP_Settings__c.DDP_4_Id__c &amp;
+
+IF(AusNet_Owned_Meter__c, 
+    &quot;;Deploy:&quot; &amp; $Setup.DDP_Settings__c.Deploy_4_Id_AusNet_Meter__c,
+    &quot;;Deploy:&quot; &amp; $Setup.DDP_Settings__c.Deploy_4_Id_Not_AusNet_Meter__c) &amp;
+
+IF(ISBLANK(AttachmentIds__c), &quot;&quot;, &quot;;attachids:&quot; &amp; AttachmentIds__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Drawloop_Next</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

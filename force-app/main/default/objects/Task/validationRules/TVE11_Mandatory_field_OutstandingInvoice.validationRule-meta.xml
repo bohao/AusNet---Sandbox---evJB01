@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_Mandatory_field_OutstandingInvoice</fullName>
+    <active>true</active>
+    <description>Validation rule to ensure the user is selecting an invoice for the &quot;Outstanding invoice&apos; Tasks. The invoice preview and the payer nomination options in the community depend from this field.</description>
+    <errorConditionFormula>IF( AND(  RecordType.DeveloperName = &apos;Make_a_Payment&apos;,  ISBLANK( Artefact__c )  ) , true, false)</errorConditionFormula>
+    <errorMessage>TASK_VR_004: You need to link the invoice to this task - go to the Invoices tab to find the number then type the invoice number into the Artefact field to search for and select the artefact</errorMessage>
+</ValidationRule>

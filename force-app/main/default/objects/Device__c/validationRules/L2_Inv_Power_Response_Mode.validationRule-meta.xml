@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Inv_Power_Response_Mode</fullName>
+    <active>true</active>
+    <description>Inv Power Response Mode can only be populated when AC Equipment Type = &quot;Inverter&quot;. 
+Inv Power Response Mode can only = &quot;Enabled&quot; if Inv Volt Watt Response Mode / Inv Volt Var Response Mode are NOT Enabled.</description>
+    <errorConditionFormula>OR(
+
+AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+NOT(ISPICKVAL( AC_Equip_Type__c , &quot;Inverter&quot;)),
+
+NOT(ISBLANK(TEXT( Inv_Power_Response_Mode__c ))),
+NOT(Legacy_Data__c)
+
+),
+
+
+
+AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+OR(
+ISPICKVAL(Inv_Volt_Watt_Response_Mode__c, &quot;Enabled&quot;),
+ISPICKVAL(Inv_Volt_Var_Response_Mode__c, &quot;Enabled&quot;)
+),
+
+ISPICKVAL(Inv_Power_Response_Mode__c, &quot;Enabled&quot;),
+NOT(Legacy_Data__c)
+
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Inv_Power_Response_Mode__c</errorDisplayField>
+    <errorMessage>Inv Power Response Mode can only be populated when AC Equipment Type = &quot;Inverter&quot;. 
+Inv Power Response Mode can only = &quot;Enabled&quot; if Inv Volt Watt Response Mode / Inv Volt Var Response Mode are NOT Enabled.</errorMessage>
+</ValidationRule>

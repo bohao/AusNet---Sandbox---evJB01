@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_DC_Coupling__c</fullName>
+    <description>Defines if system is AC or DC Coupled</description>
+    <externalId>false</externalId>
+    <label>AC or DC Coupled</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AC</fullName>
+                <default>false</default>
+                <label>AC</label>
+            </value>
+            <value>
+                <fullName>DC</fullName>
+                <default>false</default>
+                <label>DC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

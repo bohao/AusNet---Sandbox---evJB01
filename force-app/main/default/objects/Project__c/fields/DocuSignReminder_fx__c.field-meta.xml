@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignReminder_fx__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(ContestabilityType__c,&apos;IDIC&apos;),$CustomMetadata.TVE_Docusign__mdt.TVE_Custom_docusign_settings.Reminder_60__c,$CustomMetadata.TVE_Docusign__mdt.TVE_Custom_docusign_settings.Reminder_120__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DocuSign Reminder</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

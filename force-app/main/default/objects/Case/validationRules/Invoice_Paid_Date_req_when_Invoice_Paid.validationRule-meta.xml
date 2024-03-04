@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Paid_Date_req_when_Invoice_Paid</fullName>
+    <active>true</active>
+    <description>Invoice Paid date must be entered when Invoice Paid is ticked.</description>
+    <errorConditionFormula>AND(
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+Invoice_Paid__c = TRUE,
+ISBLANK(Invoice_Paid_Date__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Invoice_Paid_Date__c</errorDisplayField>
+    <errorMessage>Invoice Paid Date is blank. Please enter the Invoice Paid Date when Invoice Paid is ticked.</errorMessage>
+</ValidationRule>

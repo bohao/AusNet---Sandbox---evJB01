@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Suggested_Contacts__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to search and select a contact that may be needed to complete the case - from an internal database</description>
+    <externalId>false</externalId>
+    <label>Suggested Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Suggested Contact</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Cases (Suggested Contact)</relationshipLabel>
+    <relationshipName>SuggestedContacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

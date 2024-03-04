@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Device_Flags__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Requested__c, &quot;Req&apos;d; &quot;, &quot;&quot;) + 
+IF(Approved__c, &quot;App&apos;d; &quot;, &quot;&quot;) + 
+IF(Installed__c, &quot;Inst; &quot;, &quot;&quot;) + 
+IF(Existing_Device__c, &quot;Exist; &quot;, &quot;&quot;) + 
+IF(Decommission__c, &quot;Decom; &quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Device Flags</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

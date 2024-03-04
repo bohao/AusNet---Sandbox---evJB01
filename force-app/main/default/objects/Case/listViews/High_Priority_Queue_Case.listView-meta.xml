@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Priority_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>dcp_NMI__c</columns>
+    <columns>dcp_claim_Address_of_Property__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed - Existing incident,Closed - Incident created,Closed - No incident created</value>
+    </filters>
+    <label>High Priority Queue</label>
+    <queue>High_Priority_Queue</queue>
+    <sharedTo>
+        <group>dcp_Faults</group>
+    </sharedTo>
+</ListView>

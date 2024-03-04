@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_Call_Recording__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+CallObject = &quot; &quot;, &quot; &quot;, HYPERLINK
+(&quot;https://ausnetservicesv2.ipscape.com.au/workspace/home?view=voice_recording&amp;sub=search&amp;agntintrcn_id=&quot; &amp; CallObject, &quot;Open Call Recording&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Link Call Recording</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

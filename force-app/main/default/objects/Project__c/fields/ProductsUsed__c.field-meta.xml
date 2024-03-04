@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductsUsed__c</fullName>
+    <externalId>false</externalId>
+    <label>Products Used</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Air Conditioning</fullName>
+                <default>false</default>
+                <label>Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>Electric Floor or Storage Heating</fullName>
+                <default>false</default>
+                <label>Electric Floor or Storage Heating</label>
+            </value>
+            <value>
+                <fullName>Electric Water Heating</fullName>
+                <default>false</default>
+                <label>Electric Water Heating</label>
+            </value>
+            <value>
+                <fullName>Electric Oven</fullName>
+                <default>false</default>
+                <label>Electric Oven</label>
+            </value>
+            <value>
+                <fullName>Pump</fullName>
+                <default>false</default>
+                <label>Pump</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

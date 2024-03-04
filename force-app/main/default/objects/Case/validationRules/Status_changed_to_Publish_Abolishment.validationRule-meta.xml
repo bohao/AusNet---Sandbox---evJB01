@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Publish_Abolishment</fullName>
+    <active>true</active>
+    <description>Abolishment Cases cannot be moved to Status Publish when Total System Capacity is not 0.</description>
+    <errorConditionFormula>AND(
+    OR(
+        RecordType.Name = &quot;DER Application - Auto&quot;,
+        RecordType.Name = &quot;DER Application - Manual&quot;
+    ),
+
+    ISCHANGED(Status),
+    ISPICKVAL(Status, &quot;Publish&quot;),
+    ISPICKVAL(Type, &quot;Abolishent&quot;),
+    DER_Application__r.Total_System_Capacity__c != 0
+)</errorConditionFormula>
+    <errorMessage>Abolishment Cases cannot be moved to Status Publish when Total System Capacity is not 0.</errorMessage>
+</ValidationRule>

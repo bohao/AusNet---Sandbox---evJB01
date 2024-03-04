@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Case__c</fullName>
+    <externalId>false</externalId>
+    <label>Case</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>Case.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Claim</value>
+        </filterItems>
+        <filterItems>
+            <field>Case.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Complaint</value>
+        </filterItems>
+        <filterItems>
+            <field>Case.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>EVOW</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Claim Items</relationshipLabel>
+    <relationshipName>Claim_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

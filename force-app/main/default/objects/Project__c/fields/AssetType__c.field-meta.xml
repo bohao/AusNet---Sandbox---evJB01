@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssetType__c</fullName>
+    <externalId>false</externalId>
+    <label>Asset Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Relocate</fullName>
+                <default>false</default>
+                <label>Relocate</label>
+            </value>
+            <value>
+                <fullName>Underground Pit</fullName>
+                <default>false</default>
+                <label>Underground Pit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

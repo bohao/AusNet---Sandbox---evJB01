@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Sub_Status__c</fullName>
+    <description>Status subtype for Storm Relief cases</description>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outbound Required</fullName>
+                <default>false</default>
+                <label>Outbound Required</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer</fullName>
+                <default>false</default>
+                <label>Awaiting Customer</label>
+            </value>
+            <value>
+                <fullName>Complex Investigation</fullName>
+                <default>false</default>
+                <label>Complex Investigation</label>
+            </value>
+            <value>
+                <fullName>DELWP</fullName>
+                <default>false</default>
+                <label>DELWP</label>
+            </value>
+            <value>
+                <fullName>Investigated - Eligible</fullName>
+                <default>false</default>
+                <label>Investigated - Eligible</label>
+            </value>
+            <value>
+                <fullName>Payment Details Updated</fullName>
+                <default>false</default>
+                <label>Payment Details Updated</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Outbound Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Awaiting Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Complex Investigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>DELWP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Investigated - Eligible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Paid</controllingFieldValue>
+            <valueName>Payment Details Updated</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Device_Sub_Type__c</fullName>
+    <description>DER Register Level 3 – DER Device
+
+This field is also used to record for example the battery chemistry, or the type of PV panel. It is also used to record if a battery is contained in an electric vehicle connected in a vehicle-to-grid arrangement.</description>
+    <externalId>false</externalId>
+    <label>Device Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monocrystalline</fullName>
+                <default>false</default>
+                <label>Monocrystalline</label>
+            </value>
+            <value>
+                <fullName>Polycrystalline</fullName>
+                <default>false</default>
+                <label>Polycrystalline</label>
+            </value>
+            <value>
+                <fullName>Thin-film</fullName>
+                <default>false</default>
+                <label>Thin-film</label>
+            </value>
+            <value>
+                <fullName>Concentrating PV</fullName>
+                <default>false</default>
+                <label>Concentrating PV</label>
+            </value>
+            <value>
+                <fullName>Silicon</fullName>
+                <default>false</default>
+                <label>Silicon</label>
+            </value>
+            <value>
+                <fullName>Biohybrid</fullName>
+                <default>false</default>
+                <label>Biohybrid</label>
+            </value>
+            <value>
+                <fullName>Cadmium telluride</fullName>
+                <default>false</default>
+                <label>Cadmium telluride</label>
+            </value>
+            <value>
+                <fullName>Lithium-ion</fullName>
+                <default>false</default>
+                <label>Lithium-ion</label>
+            </value>
+            <value>
+                <fullName>Lead acid</fullName>
+                <default>false</default>
+                <label>Lead acid</label>
+            </value>
+            <value>
+                <fullName>Lead carbon sodium nickel</fullName>
+                <default>false</default>
+                <label>Lead carbon sodium nickel</label>
+            </value>
+            <value>
+                <fullName>Lead crystal</fullName>
+                <default>false</default>
+                <label>Lead crystal</label>
+            </value>
+            <value>
+                <fullName>Absorbed glass matt</fullName>
+                <default>false</default>
+                <label>Absorbed glass matt</label>
+            </value>
+            <value>
+                <fullName>Vanadium</fullName>
+                <default>false</default>
+                <label>Vanadium</label>
+            </value>
+            <value>
+                <fullName>Aqueous hybrid ion</fullName>
+                <default>false</default>
+                <label>Aqueous hybrid ion</label>
+            </value>
+            <value>
+                <fullName>Tubular gel</fullName>
+                <default>false</default>
+                <label>Tubular gel</label>
+            </value>
+            <value>
+                <fullName>Zinc bromide</fullName>
+                <default>false</default>
+                <label>Zinc bromide</label>
+            </value>
+            <value>
+                <fullName>Electric Vehicle</fullName>
+                <default>false</default>
+                <label>Electric Vehicle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

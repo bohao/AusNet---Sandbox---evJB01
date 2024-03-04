@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Inv_Voltage_Vector_Shift__c</fullName>
+    <description>DER Register Level 2 – AC Connection
+Trip angle (Deg.)</description>
+    <externalId>false</externalId>
+    <label>Non-Inv Voltage Vector Shift</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

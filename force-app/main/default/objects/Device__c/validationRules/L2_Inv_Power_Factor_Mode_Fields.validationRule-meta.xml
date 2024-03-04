@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Inv_Power_Factor_Mode_Fields</fullName>
+    <active>true</active>
+    <description>The following fields can only be populated when Inv Power Factor Mode = &quot;Enabled&quot;:
+Inv Fixed Power Factor, and Inv Fixed Power Factor Quadrant</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+NOT(ISPICKVAL(Inv_Power_Factor_Mode__c , &quot;Enabled&quot;)),
+
+OR(
+NOT(ISBLANK(Inv_Fixed_Power_Factor__c)),
+NOT(ISBLANK(TEXT(Inv_Fixed_Power_Factor_Quad__c)))
+),
+NOT(Legacy_Data__c)
+)</errorConditionFormula>
+    <errorDisplayField>Inv_Power_Factor_Mode__c</errorDisplayField>
+    <errorMessage>The following fields can only be populated when Inv Power Factor Mode = &quot;Enabled&quot;:
+Inv Fixed Power Factor, and Inv Fixed Power Factor Quadrant</errorMessage>
+</ValidationRule>

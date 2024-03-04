@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FnP_Type_of_Fault__c</fullName>
+    <description>Specifies the type of general streetlight fault</description>
+    <externalId>false</externalId>
+    <label>Type of Fault</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LightIsOut</fullName>
+                <default>false</default>
+                <label>Light is Out</label>
+            </value>
+            <value>
+                <fullName>FlickeringLight</fullName>
+                <default>false</default>
+                <label>Flickering Light</label>
+            </value>
+            <value>
+                <fullName>DimLight</fullName>
+                <default>false</default>
+                <label>Dim Light</label>
+            </value>
+            <value>
+                <fullName>LightIsOn24/7</fullName>
+                <default>false</default>
+                <label>Light is on 24/7</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

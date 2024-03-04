@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country__c</fullName>
+    <description>Country portion of applicant&apos;s address. Entry is selected from a picklist of standard values, or entered as text. Up to 80 characters are allowed if the field is a text field.</description>
+    <externalId>false</externalId>
+    <label>Country</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

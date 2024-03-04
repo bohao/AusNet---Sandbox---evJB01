@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Assessment_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( DER_Application_Scenario__c , &quot;Manual&quot;), Offer_Made_Date__c , NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date_Assessment_Outcome</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

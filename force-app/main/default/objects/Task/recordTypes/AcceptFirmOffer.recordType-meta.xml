@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AcceptFirmOffer</fullName>
+    <active>true</active>
+    <label>Accept Firm Offer</label>
+    <picklistValues>
+        <picklist>Call_Outcome__c</picklist>
+        <values>
+            <fullName>Incident Resolved - task closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect number - welfare check required%2C no contact details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple calls no answer - welfare check required%2C sent to DEECA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer - left voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer - no voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer - sent LSC SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to customer - backup plan enacted%2C customer currently safe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to customer - life support no longer required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to customer - sent to DEECA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OfferStatus__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending answer</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProjectAssigmentStatus__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Validation Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RejectionReasons__c</picklist>
+        <values>
+            <fullName>3rd party restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advised to reject by Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I have upcoming leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My requirements have changed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My workload is at capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not ready to build</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires different skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires site visit - outside my travel zone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Waiting on someone else</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Accept Firm Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accept Interconnection Contract and Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accept Preliminary Estimate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outstanding Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Select ASP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upload File</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__EventStatus__c</picklist>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Shared</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

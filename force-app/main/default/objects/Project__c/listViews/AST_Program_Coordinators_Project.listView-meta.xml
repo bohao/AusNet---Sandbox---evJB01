@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AST_Program_Coordinators_Project</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6) OR (7 AND 8)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>ProjectName__c</columns>
+    <columns>ProjectAssignee__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SAPStatus__c</columns>
+    <columns>PendingReview__c</columns>
+    <columns>ProjectAssigmentStatus__c</columns>
+    <columns>WorkCode__c</columns>
+    <columns>ApplicantLicenseAllocation__c</columns>
+    <columns>TriageDescription__c</columns>
+    <columns>InternalDueDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProjectAssigmentStatus__c</field>
+        <operation>equals</operation>
+        <value>Data Validation Required,Triage,Rejected</value>
+    </filters>
+    <filters>
+        <field>ProjectAssignee__c</field>
+        <operation>notEqual</operation>
+        <value>Alissa Daelish</value>
+    </filters>
+    <filters>
+        <field>ProjectAssignee__c</field>
+        <operation>notEqual</operation>
+        <value>Emma Backman</value>
+    </filters>
+    <filters>
+        <field>ProjectAssignee__c</field>
+        <operation>notEqual</operation>
+        <value>Joyce Thompson</value>
+    </filters>
+    <filters>
+        <field>ProjectAssignee__c</field>
+        <operation>notEqual</operation>
+        <value>Kathy Burgstahler</value>
+    </filters>
+    <filters>
+        <field>SAPStatus__c</field>
+        <operation>notEqual</operation>
+        <value>CNCL,CLSE,SUSP</value>
+    </filters>
+    <filters>
+        <field>SAPStatus__c</field>
+        <operation>equals</operation>
+        <value>REGI</value>
+    </filters>
+    <filters>
+        <field>WorkCode__c</field>
+        <operation>equals</operation>
+        <value>1016</value>
+    </filters>
+    <label>Triage - Incoming</label>
+    <sharedTo>
+        <group>Triage_Group</group>
+    </sharedTo>
+</ListView>

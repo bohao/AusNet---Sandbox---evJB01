@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPayNow__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag to identify if the first invoice was paid through Westpac. It is populated when the project is created and applies for the first invoice.</description>
+    <externalId>false</externalId>
+    <label>Is Pay Now?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

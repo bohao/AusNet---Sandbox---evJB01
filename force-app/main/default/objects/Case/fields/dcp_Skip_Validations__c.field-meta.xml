@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Skip_Validations__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Skips validations for Email2Case scenarios so the case record can be created without hitting validations</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Skips validations for Email2Case scenarios so the case record can be created without hitting validations</inlineHelpText>
+    <label>Skip Validations</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

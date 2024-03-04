@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Type_of_situation_outside_property__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of situation outside property</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Damaged power poles</fullName>
+                <default>false</default>
+                <label>Damaged power poles</label>
+            </value>
+            <value>
+                <fullName>Damaged or faulty powerline on street</fullName>
+                <default>false</default>
+                <label>Damaged or faulty powerline on street</label>
+            </value>
+            <value>
+                <fullName>Damaged or faulty powerline between your house and street</fullName>
+                <default>false</default>
+                <label>Damaged or faulty powerline between your house and street</label>
+            </value>
+            <value>
+                <fullName>Underground cable is damaged or dug up</fullName>
+                <default>false</default>
+                <label>Underground cable is damaged or dug up</label>
+            </value>
+            <value>
+                <fullName>Faulty or damaged streetlight</fullName>
+                <default>false</default>
+                <label>Faulty or damaged streetlight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

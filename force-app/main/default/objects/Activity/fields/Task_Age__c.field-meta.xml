@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Age__c</fullName>
+    <description>Formula to calculate Task Age for :Life Support Customers</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(IsClosed),
+    Task_Age_hrs__c + 
+    ((Task_Age_mins__c - (Task_Age_hrs__c*60)) / 100),
+    Task_Closed_Age__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Task Age (HH.mm)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

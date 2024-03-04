@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Notifs_Disabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Global kill-switch for Outage Management automated notifications</description>
+    <externalId>false</externalId>
+    <label>Global Incident Notifications Disabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

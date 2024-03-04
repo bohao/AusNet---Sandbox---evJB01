@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeOfInstallation__c</fullName>
+    <externalId>false</externalId>
+    <label>Type Of Installation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Telecom facility (Single/Multiple Installation)</fullName>
+                <default>false</default>
+                <label>Telecom facility (Single/Multiple Installation)</label>
+            </value>
+            <value>
+                <fullName>Traffic signal(s)</fullName>
+                <default>false</default>
+                <label>Traffic signal(s)</label>
+            </value>
+            <value>
+                <fullName>Signalling cabinet(s)</fullName>
+                <default>false</default>
+                <label>Signalling cabinet(s)</label>
+            </value>
+            <value>
+                <fullName>Railway equipment(s)</fullName>
+                <default>false</default>
+                <label>Railway equipment(s)</label>
+            </value>
+            <value>
+                <fullName>NBN equipment(s)</fullName>
+                <default>false</default>
+                <label>NBN equipment(s)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

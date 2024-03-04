@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Case_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>dcp_ElecGas_Complaint_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gates left open / not secured</fullName>
+                <default>false</default>
+                <label>Gates left open / not secured</label>
+            </value>
+            <value>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+                <label>Refusal</label>
+            </value>
+            <value>
+                <fullName>Animal Impact</fullName>
+                <default>false</default>
+                <label>Animal Impact</label>
+            </value>
+            <value>
+                <fullName>Damage due to 3rd party</fullName>
+                <default>false</default>
+                <label>Damage due to 3rd party</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>Malfunction</fullName>
+                <default>false</default>
+                <label>Malfunction</label>
+            </value>
+            <value>
+                <fullName>Noisy Transformer</fullName>
+                <default>false</default>
+                <label>Noisy Transformer</label>
+            </value>
+            <value>
+                <fullName>Oil Spill</fullName>
+                <default>false</default>
+                <label>Oil Spill</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Poles &amp; Wires</fullName>
+                <default>false</default>
+                <label>Poles &amp; Wires</label>
+            </value>
+            <value>
+                <fullName>TV/Radio Interference</fullName>
+                <default>false</default>
+                <label>TV/Radio Interference</label>
+            </value>
+            <value>
+                <fullName>Underground Pit</fullName>
+                <default>false</default>
+                <label>Underground Pit</label>
+            </value>
+            <value>
+                <fullName>Vegetation Impacting</fullName>
+                <default>false</default>
+                <label>Vegetation Impacting</label>
+            </value>
+            <value>
+                <fullName>Weather/lightning</fullName>
+                <default>false</default>
+                <label>Weather/lightning</label>
+            </value>
+            <value>
+                <fullName>Auto Reclose</fullName>
+                <default>false</default>
+                <label>Auto Reclose</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Processing Delay</fullName>
+                <default>false</default>
+                <label>Processing Delay</label>
+            </value>
+            <value>
+                <fullName>Settlement Offer Compliment</fullName>
+                <default>false</default>
+                <label>Settlement Offer Compliment</label>
+            </value>
+            <value>
+                <fullName>Cost</fullName>
+                <default>false</default>
+                <label>Cost</label>
+            </value>
+            <value>
+                <fullName>Delay</fullName>
+                <default>false</default>
+                <label>Delay</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Field</fullName>
+                <default>false</default>
+                <label>Field</label>
+            </value>
+            <value>
+                <fullName>Asset Inspection</fullName>
+                <default>false</default>
+                <label>Asset Inspection</label>
+            </value>
+            <value>
+                <fullName>Estimated/ Substituted data</fullName>
+                <default>false</default>
+                <label>Estimated/ Substituted data</label>
+            </value>
+            <value>
+                <fullName>High Account</fullName>
+                <default>false</default>
+                <label>High Account</label>
+            </value>
+            <value>
+                <fullName>Off peak</fullName>
+                <default>false</default>
+                <label>Off peak</label>
+            </value>
+            <value>
+                <fullName>Reader</fullName>
+                <default>false</default>
+                <label>Reader</label>
+            </value>
+            <value>
+                <fullName>Costs / fees</fullName>
+                <default>false</default>
+                <label>Costs / fees</label>
+            </value>
+            <value>
+                <fullName>HVI</fullName>
+                <default>false</default>
+                <label>HVI</label>
+            </value>
+            <value>
+                <fullName>Access issues</fullName>
+                <default>false</default>
+                <label>Access issues</label>
+            </value>
+            <value>
+                <fullName>Claim/Damage</fullName>
+                <default>false</default>
+                <label>Claim/Damage</label>
+            </value>
+            <value>
+                <fullName>Did not proceed</fullName>
+                <default>false</default>
+                <label>Did not proceed</label>
+            </value>
+            <value>
+                <fullName>Non Notification</fullName>
+                <default>false</default>
+                <label>Non Notification</label>
+            </value>
+            <value>
+                <fullName>Time Overrun</fullName>
+                <default>false</default>
+                <label>Time Overrun</label>
+            </value>
+            <value>
+                <fullName>Frequency</fullName>
+                <default>false</default>
+                <label>Frequency</label>
+            </value>
+            <value>
+                <fullName>Inconvenience</fullName>
+                <default>false</default>
+                <label>Inconvenience</label>
+            </value>
+            <value>
+                <fullName>Easement Issues</fullName>
+                <default>false</default>
+                <label>Easement Issues</label>
+            </value>
+            <value>
+                <fullName>Property Damage</fullName>
+                <default>false</default>
+                <label>Property Damage</label>
+            </value>
+            <value>
+                <fullName>Reinstatement and cleanup</fullName>
+                <default>false</default>
+                <label>Reinstatement and cleanup</label>
+            </value>
+            <value>
+                <fullName>Voltage Issues</fullName>
+                <default>false</default>
+                <label>Voltage Issues</label>
+            </value>
+            <value>
+                <fullName>Solar Meter/Connection delay</fullName>
+                <default>false</default>
+                <label>Solar Meter/Connection delay</label>
+            </value>
+            <value>
+                <fullName>Costs incurred</fullName>
+                <default>false</default>
+                <label>Costs incurred</label>
+            </value>
+            <value>
+                <fullName>Duration</fullName>
+                <default>false</default>
+                <label>Duration</label>
+            </value>
+            <value>
+                <fullName>Estimate Restoration Times</fullName>
+                <default>false</default>
+                <label>Estimate Restoration Times</label>
+            </value>
+            <value>
+                <fullName>Low voltage supply</fullName>
+                <default>false</default>
+                <label>Low voltage supply</label>
+            </value>
+            <value>
+                <fullName>Voltage dips</fullName>
+                <default>false</default>
+                <label>Voltage dips</label>
+            </value>
+            <value>
+                <fullName>Voltage spike (impulsive transient)</fullName>
+                <default>false</default>
+                <label>Voltage spike (impulsive transient)</label>
+            </value>
+            <value>
+                <fullName>Voltage swell</fullName>
+                <default>false</default>
+                <label>Voltage swell</label>
+            </value>
+            <value>
+                <fullName>Meter faulty/noisy</fullName>
+                <default>false</default>
+                <label>Meter faulty/noisy</label>
+            </value>
+            <value>
+                <fullName>Service line</fullName>
+                <default>false</default>
+                <label>Service line</label>
+            </value>
+            <value>
+                <fullName>Smell of Gas</fullName>
+                <default>false</default>
+                <label>Smell of Gas</label>
+            </value>
+            <value>
+                <fullName>Meter Position Alteration (MAP)</fullName>
+                <default>false</default>
+                <label>Meter Position Alteration (MAP)</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Fault Restoration</fullName>
+                <default>false</default>
+                <label>Fault Restoration</label>
+            </value>
+            <value>
+                <fullName>Mains Renewal</fullName>
+                <default>false</default>
+                <label>Mains Renewal</label>
+            </value>
+            <value>
+                <fullName>New Connection</fullName>
+                <default>false</default>
+                <label>New Connection</label>
+            </value>
+            <value>
+                <fullName>Abolishment</fullName>
+                <default>false</default>
+                <label>Abolishment</label>
+            </value>
+            <value>
+                <fullName>Bollards required</fullName>
+                <default>false</default>
+                <label>Bollards required</label>
+            </value>
+            <value>
+                <fullName>Incorrect position</fullName>
+                <default>false</default>
+                <label>Incorrect position</label>
+            </value>
+            <value>
+                <fullName>Installed too low</fullName>
+                <default>false</default>
+                <label>Installed too low</label>
+            </value>
+            <value>
+                <fullName>Time expired</fullName>
+                <default>false</default>
+                <label>Time expired</label>
+            </value>
+            <value>
+                <fullName>Estimated Reads</fullName>
+                <default>false</default>
+                <label>Estimated Reads</label>
+            </value>
+            <value>
+                <fullName>High Account - Gas Leak</fullName>
+                <default>false</default>
+                <label>High Account - Gas Leak</label>
+            </value>
+            <value>
+                <fullName>Meter Reader</fullName>
+                <default>false</default>
+                <label>Meter Reader</label>
+            </value>
+            <value>
+                <fullName>Meter stolen</fullName>
+                <default>false</default>
+                <label>Meter stolen</label>
+            </value>
+            <value>
+                <fullName>Delay - Meter Fix</fullName>
+                <default>false</default>
+                <label>Delay - Meter Fix</label>
+            </value>
+            <value>
+                <fullName>Delay - New Estates</fullName>
+                <default>false</default>
+                <label>Delay - New Estates</label>
+            </value>
+            <value>
+                <fullName>Delay - No Brainer</fullName>
+                <default>false</default>
+                <label>Delay - No Brainer</label>
+            </value>
+            <value>
+                <fullName>Delay - Shipper</fullName>
+                <default>false</default>
+                <label>Delay - Shipper</label>
+            </value>
+            <value>
+                <fullName>AusNet</fullName>
+                <default>false</default>
+                <label>AusNet</label>
+            </value>
+            <value>
+                <fullName>Contractor/AusNet Service</fullName>
+                <default>false</default>
+                <label>Contractor/AusNet Service</label>
+            </value>
+            <value>
+                <fullName>Faulty Asset</fullName>
+                <default>false</default>
+                <label>Faulty Asset</label>
+            </value>
+            <value>
+                <fullName>Gas Reinstatement</fullName>
+                <default>false</default>
+                <label>Gas Reinstatement</label>
+            </value>
+            <value>
+                <fullName>Meter</fullName>
+                <default>false</default>
+                <label>Meter</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Non AusNet Customer</fullName>
+                <default>false</default>
+                <label>Non AusNet Customer</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Retailer</fullName>
+                <default>false</default>
+                <label>Retailer</label>
+            </value>
+            <value>
+                <fullName>Delivery Partner (Field)</fullName>
+                <default>false</default>
+                <label>Delivery Partner (Field)</label>
+            </value>
+            <value>
+                <fullName>Poor Customer Service</fullName>
+                <default>false</default>
+                <label>Poor Customer Service</label>
+            </value>
+            <value>
+                <fullName>Project Complaint</fullName>
+                <default>false</default>
+                <label>Project Complaint</label>
+            </value>
+            <value>
+                <fullName>Not Engaged in Consultation</fullName>
+                <default>false</default>
+                <label>Not Engaged in Consultation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Damage - Costs/Fees</controllingFieldValue>
+            <controllingFieldValue>Gas Relight</controllingFieldValue>
+            <controllingFieldValue>Mains Renewal</controllingFieldValue>
+            <controllingFieldValue>Missed Appointment</controllingFieldValue>
+            <controllingFieldValue>Water in Service</controllingFieldValue>
+            <controllingFieldValue>Customer Installation Defect</controllingFieldValue>
+            <controllingFieldValue>Dial Before You Dig</controllingFieldValue>
+            <controllingFieldValue>Disconnection in Error</controllingFieldValue>
+            <controllingFieldValue>GSL Payment</controllingFieldValue>
+            <controllingFieldValue>Incident Investigation</controllingFieldValue>
+            <controllingFieldValue>Insurance letter request</controllingFieldValue>
+            <controllingFieldValue>Logical Conversion Delay</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <controllingFieldValue>Cross Metering</controllingFieldValue>
+            <controllingFieldValue>Customer Asset</controllingFieldValue>
+            <controllingFieldValue>Customer Error - Not AusNet</controllingFieldValue>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>No Incident Found</controllingFieldValue>
+            <controllingFieldValue>Personal Injury</controllingFieldValue>
+            <controllingFieldValue>POEL - Private Overhead Electric Line</controllingFieldValue>
+            <controllingFieldValue>Privacy Complaint</controllingFieldValue>
+            <controllingFieldValue>Service Delivery</controllingFieldValue>
+            <controllingFieldValue>Smart Meter Complaint</controllingFieldValue>
+            <controllingFieldValue>Street Lighting</controllingFieldValue>
+            <controllingFieldValue>Supply Quality</controllingFieldValue>
+            <controllingFieldValue>Tariff</controllingFieldValue>
+            <controllingFieldValue>Truck Fees</controllingFieldValue>
+            <controllingFieldValue>Vegetation Management</controllingFieldValue>
+            <controllingFieldValue>Work Practices</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas Reinstatement</controllingFieldValue>
+            <valueName>Fault Restoration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas Reinstatement</controllingFieldValue>
+            <valueName>Mains Renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gas Reinstatement</controllingFieldValue>
+            <valueName>New Connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>AusNet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Contractor/AusNet Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property Damage</controllingFieldValue>
+            <valueName>Faulty Asset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipper</controllingFieldValue>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <controllingFieldValue>Outage</controllingFieldValue>
+            <controllingFieldValue>Voltage Complaint</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipper</controllingFieldValue>
+            <controllingFieldValue>Asset - Gas</controllingFieldValue>
+            <valueName>Service line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipper</controllingFieldValue>
+            <valueName>Gas Reinstatement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shipper</controllingFieldValue>
+            <valueName>Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Non AusNet Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Developer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Retailer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party Enquiry</controllingFieldValue>
+            <valueName>Delivery Partner (Field)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Projects</controllingFieldValue>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <controllingFieldValue>Solar</controllingFieldValue>
+            <valueName>Cost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Projects</controllingFieldValue>
+            <controllingFieldValue>New Connection - Elec</controllingFieldValue>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <valueName>Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Projects</controllingFieldValue>
+            <controllingFieldValue>New Connection - Elec</controllingFieldValue>
+            <controllingFieldValue>Solar</controllingFieldValue>
+            <valueName>Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Projects</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Projects</controllingFieldValue>
+            <controllingFieldValue>Customer Service</controllingFieldValue>
+            <valueName>Field</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Service</controllingFieldValue>
+            <valueName>Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Helicopter</controllingFieldValue>
+            <valueName>Asset Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access to property</controllingFieldValue>
+            <valueName>Gates left open / not secured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access to property</controllingFieldValue>
+            <valueName>Refusal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Animal Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Damage due to 3rd party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <controllingFieldValue>Meter - Elec</controllingFieldValue>
+            <valueName>Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Noisy Transformer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Oil Spill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Poles &amp; Wires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>TV/Radio Interference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Underground Pit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Vegetation Impacting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Elec</controllingFieldValue>
+            <valueName>Weather/lightning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Gas</controllingFieldValue>
+            <valueName>Meter faulty/noisy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Gas</controllingFieldValue>
+            <valueName>Smell of Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asset - Gas</controllingFieldValue>
+            <valueName>Meter Position Alteration (MAP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Auto Reclose</controllingFieldValue>
+            <valueName>Auto Reclose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Processing Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims</controllingFieldValue>
+            <valueName>Settlement Offer Compliment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Elec</controllingFieldValue>
+            <valueName>Estimated/ Substituted data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Elec</controllingFieldValue>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>High Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Elec</controllingFieldValue>
+            <valueName>Off peak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Elec</controllingFieldValue>
+            <valueName>Reader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Abolishment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Bollards required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Incorrect position</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Installed too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Time expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Estimated Reads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>High Account - Gas Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Meter Reader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meter - Gas</controllingFieldValue>
+            <valueName>Meter stolen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Connection - Elec</controllingFieldValue>
+            <valueName>Costs / fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <valueName>Delay - Meter Fix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <valueName>Delay - New Estates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <valueName>Delay - No Brainer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Connection - Gas</controllingFieldValue>
+            <valueName>Delay - Shipper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outage</controllingFieldValue>
+            <valueName>HVI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Access issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Claim/Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Did not proceed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Non Notification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Time Overrun</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <controllingFieldValue>Unplanned Outage</controllingFieldValue>
+            <valueName>Frequency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Planned Outage</controllingFieldValue>
+            <valueName>Inconvenience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property</controllingFieldValue>
+            <valueName>Easement Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property</controllingFieldValue>
+            <valueName>Property Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Property</controllingFieldValue>
+            <valueName>Reinstatement and cleanup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solar</controllingFieldValue>
+            <valueName>Voltage Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solar</controllingFieldValue>
+            <valueName>Solar Meter/Connection delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unplanned Outage</controllingFieldValue>
+            <valueName>Costs incurred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unplanned Outage</controllingFieldValue>
+            <valueName>Duration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unplanned Outage</controllingFieldValue>
+            <valueName>Estimate Restoration Times</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voltage Complaint</controllingFieldValue>
+            <valueName>Low voltage supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voltage Complaint</controllingFieldValue>
+            <valueName>Voltage dips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voltage Complaint</controllingFieldValue>
+            <valueName>Voltage spike (impulsive transient)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voltage Complaint</controllingFieldValue>
+            <valueName>Voltage swell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Western Vic (WVTNP)</controllingFieldValue>
+            <valueName>Poor Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Western Vic (WVTNP)</controllingFieldValue>
+            <valueName>Project Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Western Vic (WVTNP)</controllingFieldValue>
+            <valueName>Not Engaged in Consultation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

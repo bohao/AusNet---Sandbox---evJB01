@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Best_description_of_situation__c</fullName>
+    <externalId>false</externalId>
+    <label>Best description of situation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>RAF_Type_of_situation_outside_property__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Car hit a power pole</fullName>
+                <default>false</default>
+                <label>Car hit a power pole</label>
+            </value>
+            <value>
+                <fullName>Damaged or broken cross arm</fullName>
+                <default>false</default>
+                <label>Damaged or broken cross arm</label>
+            </value>
+            <value>
+                <fullName>Fallen power pole</fullName>
+                <default>false</default>
+                <label>Fallen power pole</label>
+            </value>
+            <value>
+                <fullName>Leaning power pole</fullName>
+                <default>false</default>
+                <label>Leaning power pole</label>
+            </value>
+            <value>
+                <fullName>Arching / Flashover</fullName>
+                <default>false</default>
+                <label>Arching / Flashover</label>
+            </value>
+            <value>
+                <fullName>Fallen powerline</fullName>
+                <default>false</default>
+                <label>Fallen powerline</label>
+            </value>
+            <value>
+                <fullName>Low hanging powerline</fullName>
+                <default>false</default>
+                <label>Low hanging powerline</label>
+            </value>
+            <value>
+                <fullName>Tight wire</fullName>
+                <default>false</default>
+                <label>Tight wire</label>
+            </value>
+            <value>
+                <fullName>Tree branch fallen on or touching a powerline</fullName>
+                <default>false</default>
+                <label>Tree branch fallen on or touching a powerline</label>
+            </value>
+            <value>
+                <fullName>Tree fallen on powerline</fullName>
+                <default>false</default>
+                <label>Tree fallen on powerline</label>
+            </value>
+            <value>
+                <fullName>Down</fullName>
+                <default>false</default>
+                <label>Down</label>
+            </value>
+            <value>
+                <fullName>Low hanging</fullName>
+                <default>false</default>
+                <label>Low hanging</label>
+            </value>
+            <value>
+                <fullName>Tree near or touching</fullName>
+                <default>false</default>
+                <label>Tree near or touching</label>
+            </value>
+            <value>
+                <fullName>Tree on</fullName>
+                <default>false</default>
+                <label>Tree on</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Damaged power poles</controllingFieldValue>
+            <valueName>Car hit a power pole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged power poles</controllingFieldValue>
+            <valueName>Damaged or broken cross arm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged power poles</controllingFieldValue>
+            <valueName>Fallen power pole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged power poles</controllingFieldValue>
+            <valueName>Leaning power pole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged power poles</controllingFieldValue>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Arching / Flashover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <valueName>Fallen powerline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <valueName>Low hanging powerline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <valueName>Tight wire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <valueName>Tree branch fallen on or touching a powerline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline on street</controllingFieldValue>
+            <valueName>Tree fallen on powerline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Down</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Low hanging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Tree near or touching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damaged or faulty powerline between your house and street</controllingFieldValue>
+            <valueName>Tree on</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

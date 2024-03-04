@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unplanned_Outage</fullName>
+    <active>true</active>
+    <label>Unplanned Outage</label>
+    <picklistValues>
+        <picklist>Category</picklist>
+        <values>
+            <fullName>AD Advising of Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMI Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANBO Analytics - Brownout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANCF Analytics - Candling Fuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANLN Analytics - Loss of Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS Power - All Supply Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DF Disconnect For Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DL Power - Dim Lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOFT Drop Out Fuse Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DS Disconnect for Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED Equipment Defect  - P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES Electric Shock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FD Fuse Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FI Fuse Insertion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FO Fire - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FT Feeder Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HF Fire - House %2F Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI High Voltage Injection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV Investigation - High Volts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVP Planned HV Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS Power - Intermittent Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS Load Shedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV Investigation - Low Volts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LVP Planned LV Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LVT LV Fuse Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Support - Non Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MC Miscellaneous - Non Hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MF Fire - Meter Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MFT Meter Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MH Miscellaneous - Hazard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCA No Customers Affected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NF - Non SPA Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH No Hot Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA Pole - Arcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PB Pole - Broken%2FCrossarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PD Pole - Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PF Fire - Pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFD Pole - Fuse Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PH Pole - Car Hit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL Pole - Leaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PS Power - Part Supply Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT Protective Device Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Arranged LSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proximity Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC Reconnect After Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMUT RMU Fuse Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RT Recloser Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA Street Light - Fail Adjacent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC Street Light - Area Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECT Sectionaliser Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SI Switch Isolation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SL Street Light - Single Outside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SN Street Light - Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP Street Light - Found Patrol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STRT Sub-Transmission Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVA Wire Service - Arc%2FFlashover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVD Wire Service - Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVL Wire Service - Low Hanging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVT Wire Service - Tight Wire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVTN Wire Service- Tree Nr%2FTouch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVTO Wire Service - Tree On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRT Transmission Trip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSP Time Switch Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV Investigation - Interference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UC Underground - Cable Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKN Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WL Watchman Light - Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSA Wire Street - Arc%2FFlashover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSD Wire Street - Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSL Wire Street - Low Hanging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSTN Wire Street - Tree Nr%2FTouch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSTO Wire Street - Tree On</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Impact</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incident_Notifications__c</picklist>
+        <values>
+            <fullName>Automated</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Disabled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Integration_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Awaiting Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Responding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outage Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restored</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unplanned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Urgency</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_Confirmed_Flag__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Predicted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_Danger_Flag__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_POA_Status__c</picklist>
+        <values>
+            <fullName>Awaiting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Merge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Arranged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_POA_Type_Code__c</picklist>
+        <values>
+            <fullName>HV_N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_Resource_Status__c</picklist>
+        <values>
+            <fullName>ACPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTKB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RQST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TGBK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNBK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_Storm_Mode__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

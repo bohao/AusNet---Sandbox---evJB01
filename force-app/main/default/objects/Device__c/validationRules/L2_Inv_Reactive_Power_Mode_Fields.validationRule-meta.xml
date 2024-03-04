@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Inv_Reactive_Power_Mode_Fields</fullName>
+    <active>true</active>
+    <description>Inv Fixed Reactive Power can only be populated when Inv Reactive Power Mode = &quot;Enabled&quot;</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+NOT(ISPICKVAL(Inv_Reactive_Power_Mode__c , &quot;Enabled&quot;)),
+
+NOT(ISBLANK(Inv_Fixed_Reactive_Power__c)),
+NOT(Legacy_Data__c)
+
+)</errorConditionFormula>
+    <errorDisplayField>Inv_Fixed_Reactive_Power__c</errorDisplayField>
+    <errorMessage>Inv Fixed Reactive Power can only be populated when Inv Reactive Power Mode = &quot;Enabled&quot;</errorMessage>
+</ValidationRule>

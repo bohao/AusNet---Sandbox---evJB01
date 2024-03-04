@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Complete_from_Reconfig</fullName>
+    <active>true</active>
+    <description>Case Completed from Reconfig (Publish may or may not have happened, most likely it would be required)</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Complete&quot;),
+
+ISPICKVAL(PRIORVALUE(Status), &quot;Reconfig&quot;),
+
+
+OR(
+AusNet_Owned_Meter__c = FALSE,
+ISBLANK(Reconfig_Completion_Date__c),
+NOT(
+OR(
+ISPICKVAL(Submission_Status__c, &quot;Submitted Successfully&quot;),
+ISPICKVAL(Submission_Status__c, &quot;Submitted with Exceptions&quot;),
+ISPICKVAL(Submission_Status__c, &quot;Submission Not Required&quot;)
+)
+)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Given AusNet Owned Meter is ticked, please ensure Reconfig Completion Date is entered and AEMO Submission Status is set to &quot;Submitted Successfully&quot;, &quot;Submitted with Exceptions&quot;, or &quot;Submission Not Required&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protect_Relay_Wireless_Fields</fullName>
+    <active>true</active>
+    <description>When Protection Relay Communication Method = Wireless, then:
+Signal_Loss_Action_Open_PV_Replay__c
+Signal_Loss_Max_Detect__c
+Signal_Loss_Max_Operate__c
+Wireless_Manufacturer__c
+Wireless_Model__c
+
+Must be populated</description>
+    <errorConditionFormula>AND(
+ TEXT(Protect_Relay_Comm_Method__c) = &quot;Wireless&quot;,
+   OR(
+      ISBLANK(TEXT(Signal_Loss_Action_Open_PV_Replay__c)),
+      ISBLANK(TEXT(Signal_Loss_Max_Detect__c)),
+      ISBLANK(TEXT(Signal_Loss_Max_Operate__c)),
+      ISBLANK(Wireless_Manufacturer__c),
+      ISBLANK(Wireless_Model__c)
+      )
+)</errorConditionFormula>
+    <errorDisplayField>Protect_Relay_Comm_Method__c</errorDisplayField>
+    <errorMessage>When Protection Relay Communication Method = Wireless, please populate the following:
+Action on Signal Loss OPEN PV Replay,
+Signal Loss Max Detect Time &lt;30 sec,
+Signal Loss Max Operate Time &lt;1 sec,
+Wireless Manufacturer,
+Wireless Model</errorMessage>
+</ValidationRule>

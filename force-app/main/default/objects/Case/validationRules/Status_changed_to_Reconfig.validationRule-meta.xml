@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Reconfig</fullName>
+    <active>true</active>
+    <description>Case cannot be moved to Status Reconfig as field AusNet Owned Meter is unticked, or the DER Agreement does not have Status &quot;Contract Active&quot;. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Reconfig&quot;),
+
+OR(
+AusNet_Owned_Meter__c = FALSE,
+NOT(Contract_Status__c = &quot;Contract Active&quot;)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Case cannot be moved to Status Reconfig as field AusNet Owned Meter is unticked, or the DER Agreement does not have Status &quot;Contract Active&quot;. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</errorMessage>
+</ValidationRule>

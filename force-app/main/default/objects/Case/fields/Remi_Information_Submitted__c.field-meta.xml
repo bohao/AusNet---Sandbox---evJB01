@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remi_Information_Submitted__c</fullName>
+    <description>Auto checked when employee submit details over website</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto updated to &apos;Yes&apos; once employee submits the Payments Details via Payment Details Form in Ausnet Website</inlineHelpText>
+    <label>Payment details submitted?</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

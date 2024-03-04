@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Apps_North_LESS30kW</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Case_Status_Set__c</columns>
+    <columns>Cancelled_Reason__c</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>Customer__c</columns>
+    <columns>Site_fx__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Invoice_Paid_Date__c</columns>
+    <columns>Applicant_Name__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>Date_Assessment_Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>More Info Required,Technical Assessment,Designer Validation</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>North</value>
+    </filters>
+    <filters>
+        <field>Total_System_Capacity_fx__c</field>
+        <operation>lessOrEqual</operation>
+        <value>30</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>DER Apps - Hold/Wait</value>
+    </filters>
+    <label>DER Apps - North (&lt;30kW)</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

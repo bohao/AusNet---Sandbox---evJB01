@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Tech_Assess_No_Invoice</fullName>
+    <active>true</active>
+    <description>Status Changed to &quot;Technical Assessment&quot; from &quot;New&quot; or &quot;More Info Required&quot;. Please ensure Region is populated, and Invoice Required is unticked. If an Invoice is required, select the &quot;Invoice Pending&quot; Status.</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Technical Assessment&quot;),
+
+OR(
+ISPICKVAL(PRIORVALUE(Status), &quot;New&quot;),
+ISPICKVAL(PRIORVALUE(Status), &quot;More Info Required&quot;)
+),
+
+OR(
+Invoice_Required__c = TRUE,
+ISBLANK(TEXT(Region__c))
+)
+
+)</errorConditionFormula>
+    <errorMessage>Status Changed to &quot;Technical Assessment&quot; from &quot;New&quot; or &quot;More Info Required&quot;. Please ensure Region is populated, and Invoice Required is unticked. If an Invoice is required, select the &quot;Invoice Pending&quot; Status.</errorMessage>
+</ValidationRule>

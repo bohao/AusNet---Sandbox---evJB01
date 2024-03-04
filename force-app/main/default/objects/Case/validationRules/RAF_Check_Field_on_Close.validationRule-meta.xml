@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Check_Field_on_Close</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Report_a_Fault&apos; &amp;&amp; 
+OR(ISPICKVAL(Status, &apos;Closed - Existing incident&apos;),ISPICKVAL(Status, &apos;Closed - Incident created&apos;),ISPICKVAL(Status, &apos;Closed - No incident created&apos;)) &amp;&amp;
+
+ISPICKVAL(dcp_Case_Outcome__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>dcp_Case_Outcome__c</errorDisplayField>
+    <errorMessage>Please populate the Case Outcome field</errorMessage>
+</ValidationRule>

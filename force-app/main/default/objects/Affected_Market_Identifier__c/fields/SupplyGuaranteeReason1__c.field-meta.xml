@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupplyGuaranteeReason1__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(uom_Service_Point__r.vlocity_cmt__PremisesId__r.vlocity_cmt__SupplyGuaranteeReason__c)</formula>
+    <label>Supply Guarantee Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

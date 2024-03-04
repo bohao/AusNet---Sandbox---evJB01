@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeofSupply__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Supply</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Phase (230 volts)</fullName>
+                <default>false</default>
+                <label>Single Phase (230 volts)</label>
+            </value>
+            <value>
+                <fullName>Two Phase (230/460 volts)</fullName>
+                <default>false</default>
+                <label>Two Phase (230/460 volts)</label>
+            </value>
+            <value>
+                <fullName>Three Phase (230/400 volts)</fullName>
+                <default>false</default>
+                <label>Three Phase (230/400 volts)</label>
+            </value>
+            <value>
+                <fullName>Low Voltage (Single/Two/Three phase)</fullName>
+                <default>false</default>
+                <label>Low Voltage (Single/Two/Three phase)</label>
+            </value>
+            <value>
+                <fullName>High Voltage (22kV or above)</fullName>
+                <default>false</default>
+                <label>High Voltage (22kV or above)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

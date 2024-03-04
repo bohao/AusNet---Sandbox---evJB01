@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remi_Are_You__c</fullName>
+    <externalId>false</externalId>
+    <label>Are you</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>An Australian Resident for tax purposes</fullName>
+                <default>false</default>
+                <label>An Australian Resident for tax purposes</label>
+            </value>
+            <value>
+                <fullName>A foreign resident for tax purposes</fullName>
+                <default>false</default>
+                <label>A foreign resident for tax purposes</label>
+            </value>
+            <value>
+                <fullName>A working holiday maker</fullName>
+                <default>false</default>
+                <label>A working holiday maker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

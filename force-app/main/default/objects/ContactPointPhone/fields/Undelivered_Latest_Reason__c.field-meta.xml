@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Undelivered_Latest_Reason__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Undelivered_Latest_Status__c ,
+&apos;QueuedToSfmcSendService&apos;, &apos;Message queued to internal send service.&apos;,
+&apos;QueueFailureToSfmcSendService&apos;,&apos;Message failed to queue to internal send service. Retry your send.&apos;,
+&apos;ValidationError&apos; , &apos;Internal validation error. Retry your send.&apos;,
+&apos;DeliveredToAggregator&apos;, &apos;Message delivered to the aggregator. The status will be updated when the delivery confirmation comes from the carrier or mobile device. For shared codes, this is the final status.&apos;,
+&apos;FailedToAggregator&apos;, &apos;Message not delivered to the aggregator. Retry your send.&apos;,
+&apos;UnknownToAggregator&apos;, &apos;Unknown aggregator error.&apos;,
+&apos;ThrottledToAggregator&apos;, &apos;Message not accepted by aggregator due to capacity issues. Send will be retried automatically.&apos;,
+&apos;Enroute&apos;, &apos;Message is en route to carrier. Waiting on carrier confirmation.&apos;,
+&apos;SentToCarrier&apos;, &apos;Message sent to carrier. Waiting to be accepted by carrier.&apos;,
+&apos;AcceptedByCarrier&apos;, &apos;Message accepted by carrier. Waiting for delivery confirmation.&apos;,
+&apos;Unknown&apos;, &apos;Unknown error&apos;,
+&apos;Delivered&apos;, &apos;Message delivered to mobile device.&apos;,
+&apos;Undeliverable&apos;, &apos;Message not delivered to mobile device.&apos;,
+&apos;Expired&apos;, &apos;Message expired. Message exhausted the carrier retry process. Mobile device may be out of carrier range.&apos;,
+&apos;Deleted&apos;, &apos;Message deleted by the carrier.&apos;,
+&apos;Rejected&apos;, &apos;Message rejected. Carrier may have detected a loop or assumed that message is spam. This status can indicate an administrative or financial problem between the operator and the end-users.&apos;,
+&apos;&apos;
+)</formula>
+    <label>Undelivered Latest Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

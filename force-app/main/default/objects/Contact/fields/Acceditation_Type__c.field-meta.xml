@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acceditation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Acceditation Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CEC</fullName>
+                <default>false</default>
+                <label>CEC</label>
+            </value>
+            <value>
+                <fullName>REC</fullName>
+                <default>false</default>
+                <label>REC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

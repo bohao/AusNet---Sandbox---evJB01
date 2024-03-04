@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AEMO_Status__c</fullName>
+    <description>DER Register Level 2 – AC Connection
+DER Register Level 3 – DER Device
+
+
+Code used to indicate the status of the AC Connection or Device. This will be used to identify if an AC Connection or Device is active or inactive or decommissioned.
+
+This status will also track commissioning and decommissioning date. When a new record is inserted in the database, the installation date/ start date is defined by the user and may be backdated.</description>
+    <externalId>false</externalId>
+    <label>AEMO Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Decommissioned</fullName>
+                <default>false</default>
+                <label>Decommissioned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

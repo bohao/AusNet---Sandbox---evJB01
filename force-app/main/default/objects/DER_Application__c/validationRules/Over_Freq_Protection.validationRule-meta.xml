@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Over_Freq_Protection</fullName>
+    <active>true</active>
+    <description>Over-Frequency Protection (F&gt;) must be in the range of 50 - 55 (inclusive)</description>
+    <errorConditionFormula>OR(
+Over_Freq_Protection__c &lt; 50,
+Over_Freq_Protection__c &gt; 55
+)</errorConditionFormula>
+    <errorDisplayField>Over_Freq_Protection__c</errorDisplayField>
+    <errorMessage>Over-Frequency Protection (F&gt;) is outside the permitted range of 50 - 55 (inclusive)</errorMessage>
+</ValidationRule>

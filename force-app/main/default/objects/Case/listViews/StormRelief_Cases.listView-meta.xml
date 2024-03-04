@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StormRelief_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>dcp_Sub_Status__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Storm_Relief</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Storm Relief</value>
+    </filters>
+    <filters>
+        <field>dcp_Sub_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Complex Investigation,Investigated - Eligible</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Storm Relief</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Under Investigation</value>
+    </filters>
+    <label>Storm Relief Cases</label>
+    <sharedTo>
+        <group>dcp_Storm_Relief</group>
+    </sharedTo>
+</ListView>

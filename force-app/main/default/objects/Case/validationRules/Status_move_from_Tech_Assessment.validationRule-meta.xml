@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_move_from_Tech_Assessment</fullName>
+    <active>true</active>
+    <description>If Case Status = Technical Assessment, only allow the status to be changed to Offer Sent for Cases created via SiteCore (i.e. Case Origin = Web)</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Origin, &quot;Web&quot;),
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISPICKVAL(PRIORVALUE(Status), &quot;Technical Assessment&quot;),
+ISCHANGED(Status),
+
+NOT(
+OR(
+ISPICKVAL(Status, &quot;Offer Sent&quot;),
+ISPICKVAL(Status, &quot;Cancelled&quot;)
+)
+)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Cases with status &quot;Technical Assessment&quot; can only be moved to status &quot;Offer Sent&quot; or &quot;Cancelled&quot;. This is applicable to Cases created via the website only.</errorMessage>
+</ValidationRule>

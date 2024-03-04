@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closure_Fields_Must_Be_Populated</fullName>
+    <active>true</active>
+    <description>Requires user to populate Case Outcome &amp; Closure Notes fields before setting Case Status to Closed.</description>
+    <errorConditionFormula>AND(
+	dcp_Skip_Validations__c == false,
+	ISPICKVAL(Status, &quot;Closed&quot;),
+	OR(
+		ISBLANK(TEXT(dcp_Case_Outcome__c)),
+		ISBLANK(dcp_Closure_Notes__c),
+		ISBLANK(TEXT(dcp_Case_Reason__c)),
+		ISBLANK(TEXT(dcp_ElecGas_Complaint_Category__c))
+	),
+	OR(
+		RecordType.DeveloperName  = &quot;dcp_Claim&quot;,
+		RecordType.DeveloperName = &quot;dcp_Complaint&quot;,
+		RecordType.DeveloperName = &quot;dcp_Insurance_Letter&quot;,
+		RecordType.DeveloperName = &quot;dcp_EWOV&quot;,
+		RecordType.DeveloperName = &quot;Connections&quot;,
+		RecordType.DeveloperName = &quot;dcp_General_Enquiry&quot;
+	)
+)</errorConditionFormula>
+    <errorMessage>Please populate Case Reason, Category, Outcome, and Closure Notes before closing the Case</errorMessage>
+</ValidationRule>

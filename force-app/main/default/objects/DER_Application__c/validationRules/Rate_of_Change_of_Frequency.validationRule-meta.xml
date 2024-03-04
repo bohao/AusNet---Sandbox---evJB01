@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_of_Change_of_Frequency</fullName>
+    <active>true</active>
+    <description>Rate of Change of Frequency (RoCoF) must be in the range of 0 - 4 (inclusive)</description>
+    <errorConditionFormula>OR(
+Rate_of_Change_of_Freq__c &lt; 0,
+Rate_of_Change_of_Freq__c &gt; 4
+)</errorConditionFormula>
+    <errorDisplayField>Rate_of_Change_of_Freq__c</errorDisplayField>
+    <errorMessage>Rate of Change of Frequency (RoCoF) is outside the permitted range of 0 - 4 (inclusive)</errorMessage>
+</ValidationRule>

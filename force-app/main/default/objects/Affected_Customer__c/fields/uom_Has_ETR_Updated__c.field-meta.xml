@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>uom_Has_ETR_Updated__c</fullName>
+    <description>Flags if the estimated time for restoration has changed or not</description>
+    <externalId>false</externalId>
+    <formula>TEXT(uom_Estimated_restoration_date__c) != TEXT(uom_Incident__r.uom_Estimated_restoration_date__c)</formula>
+    <label>ETR Updated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

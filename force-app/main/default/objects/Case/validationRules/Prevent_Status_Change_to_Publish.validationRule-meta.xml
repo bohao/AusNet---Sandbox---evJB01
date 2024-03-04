@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Status_Change_to_Publish</fullName>
+    <active>true</active>
+    <description>Prevent Status Change to Publish where the Island-able installation and/or DRED enabled field is &apos;Null&apos;</description>
+    <errorConditionFormula>AND(
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+ISNULL(TEXT( DER_Application__r.Islandable_Installation__c ) ) ,
+ISPICKVAL( Status , &apos;Publish&apos;) )</errorConditionFormula>
+    <errorMessage>Status cannot be changed to Publish since &apos;Islandable_Installation__c&apos; field is NULL on DER Application</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PendingReview__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox used to flag the projects with information pending to review.</description>
+    <externalId>false</externalId>
+    <label>Pending Review?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

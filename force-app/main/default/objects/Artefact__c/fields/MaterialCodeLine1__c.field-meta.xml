@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaterialCodeLine1__c</fullName>
+    <externalId>false</externalId>
+    <label>Material Code Line 1</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>InvoiceTypeLine1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Material_Code</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Site Assessment Fee</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>CCAAA001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Assessment Fee</controllingFieldValue>
+            <controllingFieldValue>Project Fee</controllingFieldValue>
+            <controllingFieldValue>Additional Design Fee</controllingFieldValue>
+            <controllingFieldValue>Additional Site Visit Fee</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>CCAAA002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Contribution</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>CCAAA042</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bond (Ex GST)</controllingFieldValue>
+            <valueName>GNAAA067</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

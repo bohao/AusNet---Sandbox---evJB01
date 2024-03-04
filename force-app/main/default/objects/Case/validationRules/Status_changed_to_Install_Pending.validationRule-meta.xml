@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Install_Pending</fullName>
+    <active>true</active>
+    <description>Case cannot be moved to Status Installation Pending as the DER Agreement does not have Status &quot;Offer Accepted&quot;, or there is no Offer Accepted Date recorded. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Installation Pending&quot;),
+
+OR(
+NOT(Contract_Status__c = &quot;Offer Accepted&quot;),
+ISBLANK(Offer_Accepted_Date__c)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Case cannot be moved to Status Installation Pending as the DER Agreement does not have Status &quot;Offer Accepted&quot;, or there is no Offer Accepted Date recorded. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>App_Conn_Embedded_Generator_Agreement_FX__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;queryid=[derAppl]a064a0000006kgF?pv0=&quot; + DER_Application__r.Id + &quot;,[devices]a064a0000006kgA?pv0=&quot; + DER_Application__r.Id + &quot;,[customer]a064a0000006kfH?pv0=&quot; + Customer__r.Id + &quot;,[custContact]a064a0000006kfM?pv0=&quot; + Customer__r.Id + &quot;,[derAgmt]a064a0000006kfC?pv0=&quot; + DER_Application__r.Id +
+&quot;&amp;templateid=a0E4a000000CmoA&quot; + 
+&quot;&amp;defaultpdf=1&quot; + 
+&quot;&amp;ac0=0&quot; + 
+&quot;&amp;qmode=SendEmail&quot; + 
+&quot;&amp;emailadditionalto=&quot; +  Applicant_Email__c  + &quot;, &quot; + Customer_Email__c +
+&quot;&amp;qvar0format=10010&quot; + 
+&quot;&amp;qvar1format=10010&quot; + 
+&quot;&amp;congaemailtemplateid=&quot; + IF( AusNet_Owned_Meter__c ==True, &quot;a054a000000GoLB&quot;, &quot;a054a000000GoLG&quot;) +
+&quot;&amp;qvar0id=a064a0000006kfv&quot; + 
+&quot;&amp;qvar1id=a064a0000006kg5&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>App Conn Embedded Generator Agreement FX</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

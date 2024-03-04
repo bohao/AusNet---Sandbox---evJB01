@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_All_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>dcp_Market_Identifier__c</columns>
+    <columns>dcp_Site_Address__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.dcp_Claim,Case.dcp_Complaint,Case.dcp_EWOV,Case.dcp_General_Enquiry,Case.dcp_Insurance_Letter,Case.Storm_Relief</value>
+    </filters>
+    <label>All Cases</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Executives</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

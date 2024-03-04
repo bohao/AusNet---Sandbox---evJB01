@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_Mandatory_assignment_reply</fullName>
+    <active>true</active>
+    <description>Validation rule to avoid the users can close a project assignment task without answer the assignment</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName  = &apos;ProjectAssignment&apos;,   ISCHANGED(Status), ISPICKVAL(Status, &apos;Completed&apos;), OR(ISPICKVAL( ProjectAssigmentStatus__c , &apos;Pending Confirmation&apos;), ISPICKVAL( ProjectAssigmentStatus__c , &apos;Triage&apos;) ) )</errorConditionFormula>
+    <errorMessage>TASK_VR_002: You must to Accept or Reject the project assignment before to close the task</errorMessage>
+</ValidationRule>

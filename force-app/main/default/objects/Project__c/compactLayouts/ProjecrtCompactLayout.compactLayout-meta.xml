@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjecrtCompactLayout</fullName>
+    <fields>Project_Header__c</fields>
+    <fields>WorkCode__c</fields>
+    <fields>SAPStatus__c</fields>
+    <fields>SAPStatusDaysSinceChange_fx__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>ApplicantContact__c</fields>
+    <fields>ApplicantLicenseAllocation__c</fields>
+    <fields>LastInvoicePaidDate__c</fields>
+    <label>Projecrt Compact Layout</label>
+</CompactLayout>

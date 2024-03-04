@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Check_Field_on_Caseoutcome</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Report_a_Fault&apos; &amp;&amp; ISPICKVAL(dcp_Case_Outcome__c, &apos;No Further Action&apos;) &amp;&amp; 
+
+dcp_Closure_Notes__c = null</errorConditionFormula>
+    <errorDisplayField>dcp_Closure_Notes__c</errorDisplayField>
+    <errorMessage>Please populate the Case Closure Notes field</errorMessage>
+</ValidationRule>

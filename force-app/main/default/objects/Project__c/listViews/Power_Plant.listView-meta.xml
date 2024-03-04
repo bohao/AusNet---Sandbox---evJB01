@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Power_Plant</fullName>
+    <columns>NAME</columns>
+    <columns>ProjectName__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <columns>ProjOwnerName_fx__c</columns>
+    <columns>ProjectAssignee__c</columns>
+    <columns>WorkCode__c</columns>
+    <columns>SAPStatus__c</columns>
+    <columns>SAPStatusUpdateDate__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>SAPStatusDaysSinceChange_fx__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProjOwnerName_fx__c</field>
+        <operation>equals</operation>
+        <value>Robert Stent</value>
+    </filters>
+    <label>Power Plant Projects</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DSP_User_Role</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_L2_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>AC_Equip_Type__c</fields>
+    <fields>AC_Equip_Sub_Type__c</fields>
+    <fields>Manufacturer__c</fields>
+    <fields>Model__c</fields>
+    <fields>AC_Equip_Cap__c</fields>
+    <fields>Device_Phase__c</fields>
+    <fields>Device_Count__c</fields>
+    <label>DER L2 Compact Layout</label>
+</CompactLayout>

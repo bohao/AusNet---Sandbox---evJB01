@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Meter_condition__c</fullName>
+    <externalId>false</externalId>
+    <label>Meter condition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Meter is blank / dials not spinning</fullName>
+                <default>false</default>
+                <label>Meter is blank / dials not spinning</label>
+            </value>
+            <value>
+                <fullName>Meter is not blank but I still don’t have power</fullName>
+                <default>false</default>
+                <label>Meter is not blank but I still don’t have power</label>
+            </value>
+            <value>
+                <fullName>The issue has been resolved</fullName>
+                <default>false</default>
+                <label>The issue has been resolved</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

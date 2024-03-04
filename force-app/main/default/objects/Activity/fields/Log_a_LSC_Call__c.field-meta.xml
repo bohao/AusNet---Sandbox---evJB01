@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_a_LSC_Call__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this flag only when user wants to log call attempt to end customer.</description>
+    <externalId>false</externalId>
+    <label>Log a LSC Call</label>
+    <type>Checkbox</type>
+</CustomField>

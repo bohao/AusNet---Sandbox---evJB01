@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NetworkProtectionGroup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used in the Support Services &amp; Operations Checklist Flow and not displayed on the page layout</description>
+    <externalId>false</externalId>
+    <label>Network Protection Group</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

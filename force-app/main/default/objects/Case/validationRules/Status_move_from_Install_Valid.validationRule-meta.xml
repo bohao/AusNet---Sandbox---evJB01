@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_move_from_Install_Valid</fullName>
+    <active>true</active>
+    <description>If Case Status = Installation Validation, only allow the status to be changed to Designer Validation, Publish, Reconfig, or Complete for Cases created via SiteCore (i.e. Case Origin = Web)</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Origin, &quot;Web&quot;),
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISPICKVAL(PRIORVALUE(Status), &quot;Installation Validation&quot;),
+ISCHANGED(Status),
+NOT(
+OR(
+ISPICKVAL(Status, &quot;Designer Validation&quot;),
+ISPICKVAL(Status, &quot;Publish&quot;),
+ISPICKVAL(Status, &quot;Reconfig&quot;),
+ISPICKVAL(Status, &quot;Complete&quot;),
+ISPICKVAL(Status, &quot;Cancelled&quot;)
+)
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Cases with status &quot;Installation Validation&quot; can only be moved to status &quot;Designer Validation&quot;, &quot;Publish&quot;, &quot;Reconfig&quot;, &quot;Complete&quot;, or &quot;Cancelled&quot;. This depends on the requirements of each case. This is applicable to Cases created via the website only.</errorMessage>
+</ValidationRule>

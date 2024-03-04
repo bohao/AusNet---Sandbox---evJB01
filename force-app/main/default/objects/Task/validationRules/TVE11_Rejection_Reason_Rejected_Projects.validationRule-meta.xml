@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_Rejection_Reason_Rejected_Projects</fullName>
+    <active>true</active>
+    <description>Validation rule to avoid the users can close Project Assignment Tasks rejected without indicate the rejection reason.</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName  = &apos;ProjectAssignment&apos;,   ISCHANGED(Status), ISPICKVAL(Status, &apos;Completed&apos;), ISPICKVAL( ProjectAssigmentStatus__c, &apos;Rejected&apos;),  ISBLANK(TEXT(RejectionReasons__c))   )</errorConditionFormula>
+    <errorMessage>TASK_VR_003: You must select the rejection reason for this assignment.</errorMessage>
+</ValidationRule>

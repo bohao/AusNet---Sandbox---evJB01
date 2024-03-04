@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AplContact_Ck__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(IsPropertyOwner__c,&apos;No&apos;),&apos;Email~&apos;+ApplicantContact__r.Email+&apos;;&apos;+&apos;Role~Signer 1;&apos;+&apos;FirstName~&apos;+ApplicantContact__r.FirstName+&apos;;&apos;+&apos;LastName~&apos;+ApplicantContact__r.LastName+&apos;,&apos;,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Application Contact _Check</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

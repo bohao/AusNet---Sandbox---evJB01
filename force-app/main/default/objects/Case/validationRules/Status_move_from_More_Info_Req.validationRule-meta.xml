@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_move_from_More_Info_Req</fullName>
+    <active>true</active>
+    <description>If Case Status = More Info Required, only allow the status to be changed to Invoice Pending, or Technical Assessment for Cases created via SiteCore (i.e. Case Origin = Web)</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Origin, &quot;Web&quot;),
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+
+ISPICKVAL(PRIORVALUE(Status), &quot;More Info Required&quot;),
+ISCHANGED(Status),
+NOT(
+OR(
+ISPICKVAL(Status, &quot;Invoice Pending&quot;),
+ISPICKVAL(Status, &quot;Technical Assessment&quot;),
+ISPICKVAL(Status, &quot;Cancelled&quot;)
+)
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Cases with status &quot;More Info Required&quot; can only be moved to status &quot;Invoice Pending&quot;, &quot;Technical Assessment&quot;, or &quot;Cancelled&quot;. This is applicable to Cases created via the website only.</errorMessage>
+</ValidationRule>

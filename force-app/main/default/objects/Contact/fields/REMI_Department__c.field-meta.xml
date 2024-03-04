@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REMI_Department__c</fullName>
+    <description>AusNet Departments for remediation contacts</description>
+    <externalId>false</externalId>
+    <label>Department</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>REMI_Division__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+                <label>Treasury</label>
+            </value>
+            <value>
+                <fullName>Corporate Finance</fullName>
+                <default>false</default>
+                <label>Corporate Finance</label>
+            </value>
+            <value>
+                <fullName>Finance Growth &amp; Corporate</fullName>
+                <default>false</default>
+                <label>Finance Growth &amp; Corporate</label>
+            </value>
+            <value>
+                <fullName>Finance Networks &amp; Technology</fullName>
+                <default>false</default>
+                <label>Finance Networks &amp; Technology</label>
+            </value>
+            <value>
+                <fullName>Tax and Investor Relations</fullName>
+                <default>false</default>
+                <label>Tax and Investor Relations</label>
+            </value>
+            <value>
+                <fullName>Risk</fullName>
+                <default>false</default>
+                <label>Risk</label>
+            </value>
+            <value>
+                <fullName>Remuneration and Compliance</fullName>
+                <default>false</default>
+                <label>Remuneration and Compliance</label>
+            </value>
+            <value>
+                <fullName>People</fullName>
+                <default>false</default>
+                <label>People</label>
+            </value>
+            <value>
+                <fullName>Business Process Transformation</fullName>
+                <default>false</default>
+                <label>Business Process Transformation</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+                <label>Procurement</label>
+            </value>
+            <value>
+                <fullName>Sustainability</fullName>
+                <default>false</default>
+                <label>Sustainability</label>
+            </value>
+            <value>
+                <fullName>AusNext</fullName>
+                <default>false</default>
+                <label>AusNext</label>
+            </value>
+            <value>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <label>Asset Management</label>
+            </value>
+            <value>
+                <fullName>Network Safety and Performance</fullName>
+                <default>false</default>
+                <label>Network Safety and Performance</label>
+            </value>
+            <value>
+                <fullName>Gass Network Management</fullName>
+                <default>false</default>
+                <label>Gass Network Management</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>Digital Futures and Innovation</fullName>
+                <default>false</default>
+                <label>Digital Futures and Innovation</label>
+            </value>
+            <value>
+                <fullName>Digital Intelligence</fullName>
+                <default>false</default>
+                <label>Digital Intelligence</label>
+            </value>
+            <value>
+                <fullName>Network Strategy and Planning</fullName>
+                <default>false</default>
+                <label>Network Strategy and Planning</label>
+            </value>
+            <value>
+                <fullName>Information Security</fullName>
+                <default>false</default>
+                <label>Information Security</label>
+            </value>
+            <value>
+                <fullName>Digital Delivery</fullName>
+                <default>false</default>
+                <label>Digital Delivery</label>
+            </value>
+            <value>
+                <fullName>Enterprise and Energy Platforms</fullName>
+                <default>false</default>
+                <label>Enterprise and Energy Platforms</label>
+            </value>
+            <value>
+                <fullName>Strategic Infrastructure Projects</fullName>
+                <default>false</default>
+                <label>Strategic Infrastructure Projects</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>WVTNP</fullName>
+                <default>false</default>
+                <label>WVTNP</label>
+            </value>
+            <value>
+                <fullName>Asset and Utility Services</fullName>
+                <default>false</default>
+                <label>Asset and Utility Services</label>
+            </value>
+            <value>
+                <fullName>Energy Services</fullName>
+                <default>false</default>
+                <label>Energy Services</label>
+            </value>
+            <value>
+                <fullName>Emerging Markets</fullName>
+                <default>false</default>
+                <label>Emerging Markets</label>
+            </value>
+            <value>
+                <fullName>Energy Policy</fullName>
+                <default>false</default>
+                <label>Energy Policy</label>
+            </value>
+            <value>
+                <fullName>Commercial Development and Investments</fullName>
+                <default>false</default>
+                <label>Commercial Development and Investments</label>
+            </value>
+            <value>
+                <fullName>HSEQ</fullName>
+                <default>false</default>
+                <label>HSEQ</label>
+            </value>
+            <value>
+                <fullName>Field Assessment and Vegetation Management</fullName>
+                <default>false</default>
+                <label>Field Assessment and Vegetation Management</label>
+            </value>
+            <value>
+                <fullName>Field Operations</fullName>
+                <default>false</default>
+                <label>Field Operations</label>
+            </value>
+            <value>
+                <fullName>Customer Relations and Services</fullName>
+                <default>false</default>
+                <label>Customer Relations and Services</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Performance, Planning and Commercial</fullName>
+                <default>false</default>
+                <label>Performance, Planning and Commercial</label>
+            </value>
+            <value>
+                <fullName>Network Control and Operations</fullName>
+                <default>false</default>
+                <label>Network Control and Operations</label>
+            </value>
+            <value>
+                <fullName>General Counsel</fullName>
+                <default>false</default>
+                <label>General Counsel</label>
+            </value>
+            <value>
+                <fullName>Internal Audit</fullName>
+                <default>false</default>
+                <label>Internal Audit</label>
+            </value>
+            <value>
+                <fullName>Strategy and Corporate Development</fullName>
+                <default>false</default>
+                <label>Strategy and Corporate Development</label>
+            </value>
+            <value>
+                <fullName>Regulatory Strategy and Policy</fullName>
+                <default>false</default>
+                <label>Regulatory Strategy and Policy</label>
+            </value>
+            <value>
+                <fullName>Regulation</fullName>
+                <default>false</default>
+                <label>Regulation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Treasury</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Corporate Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Finance Growth &amp; Corporate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Finance Networks &amp; Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Tax and Investor Relations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>Remuneration and Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>People</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>Business Process Transformation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>Procurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>Sustainability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People Sustainability &amp; Transformation</controllingFieldValue>
+            <valueName>AusNext</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Asset Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Network Safety and Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Gass Network Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Digital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Digital Futures and Innovation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Digital Intelligence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Network Strategy and Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Information Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Digital Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Management &amp; Digital</controllingFieldValue>
+            <valueName>Enterprise and Energy Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Strategic Infrastructure Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>WVTNP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Asset and Utility Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Energy Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Emerging Markets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Energy Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Development &amp; Future Networks</controllingFieldValue>
+            <valueName>Commercial Development and Investments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>HSEQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Field Assessment and Vegetation Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Field Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Customer Relations and Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Performance, Planning and Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network Operations &amp; Safety</controllingFieldValue>
+            <valueName>Network Control and Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Governance</controllingFieldValue>
+            <valueName>General Counsel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Governance</controllingFieldValue>
+            <valueName>Internal Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Strategy and Regulations</controllingFieldValue>
+            <valueName>Strategy and Corporate Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Strategy and Regulations</controllingFieldValue>
+            <valueName>Regulatory Strategy and Policy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Strategy and Regulations</controllingFieldValue>
+            <valueName>Regulation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

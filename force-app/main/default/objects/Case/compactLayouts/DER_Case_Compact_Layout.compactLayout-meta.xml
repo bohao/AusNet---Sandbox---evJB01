@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Case_Compact_Layout</fullName>
+    <fields>Application_Number__c</fields>
+    <fields>Status</fields>
+    <fields>DER_Application_Scenario__c</fields>
+    <fields>DER_Application_Size__c</fields>
+    <fields>OwnerId</fields>
+    <fields>Region__c</fields>
+    <fields>DER_Application__c</fields>
+    <fields>FE_Reg_Status__c</fields>
+    <label>DER Case Compact Layout</label>
+</CompactLayout>

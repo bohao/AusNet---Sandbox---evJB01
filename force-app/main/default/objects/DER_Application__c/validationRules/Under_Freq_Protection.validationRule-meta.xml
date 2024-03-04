@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Under_Freq_Protection</fullName>
+    <active>true</active>
+    <description>Under-Frequency Protection (F&lt;) must be in the range of 45 - 50 (inclusive)</description>
+    <errorConditionFormula>OR(
+Under_Freq_Protection__c &lt; 45,
+Under_Freq_Protection__c &gt;50
+)</errorConditionFormula>
+    <errorDisplayField>Under_Freq_Protection__c</errorDisplayField>
+    <errorMessage>Under-Frequency Protection (F&lt;) is outside the permitted range of 45 - 50 (inclusive)</errorMessage>
+</ValidationRule>

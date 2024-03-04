@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ph_A_Total_Export__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(Case_Type__c=&apos;New&apos;, Case_Type__c=&apos;Augmentation&apos;), Ph_A_Exist_Export__c, 0) + Ph_A_New_Export__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Phase A Total Export (kVA)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_On_Incident_Resolved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag indicates that When an incident is resolved, should this task be auto closed if in Open status.</description>
+    <externalId>false</externalId>
+    <label>Auto Close on Incident Resolved</label>
+    <type>Checkbox</type>
+</CustomField>

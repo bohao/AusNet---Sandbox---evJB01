@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inv_Var_Response_Q_at_V1__c</fullName>
+    <description>DER Register Level 2 – AC Connection</description>
+    <externalId>false</externalId>
+    <label>Inv Var Response Q at V1</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

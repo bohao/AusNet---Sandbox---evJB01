@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusIcon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR($Profile.Name  = &apos;TVE-11 Customer User&apos;, $Profile.Name  = &apos;TVE-11 Partner User&apos;), IF( ISPICKVAL(SAPStatus__c, &apos;On time&apos;) , IMAGE(&apos;/sfsites/c/resource/1574168955000/greenImage&apos;, TEXT(SAPStatus__c), 20, 20) , 
+IMAGE(&apos;/sfsites/c/resource/1574166438000/errorIMG&apos;, TEXT(SAPStatus__c) , 20, 20) ), IF( ISPICKVAL(SAPStatus__c, &apos;On time&apos;) , IMAGE(&apos;/resource/1574168955000/greenImage&apos;, TEXT(SAPStatus__c), 20, 20) , 
+IMAGE(&apos;/resource/1574166438000/errorIMG&apos;, TEXT(SAPStatus__c) , 20, 20) ))</formula>
+    <label>Project Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Non_Inv_RoCoF</fullName>
+    <active>true</active>
+    <description>Non-Inv Rate of Change of Freq (RoCoF) must be in the range of 0 - 4 (inclusive)</description>
+    <errorConditionFormula>AND(
+
+RecordType.Name = &quot;AC Equipment - L2&quot;,
+
+OR(
+Non_Inv_Rate_of_Change_of_Freq__c  &lt; 0,
+Non_Inv_Rate_of_Change_of_Freq__c  &gt; 4
+),
+NOT(Legacy_Data__c)
+)</errorConditionFormula>
+    <errorDisplayField>Non_Inv_Rate_of_Change_of_Freq__c</errorDisplayField>
+    <errorMessage>Non-Inv Rate of Change of Freq (RoCoF) is outside the permitted range of 0 - 4 (inclusive)</errorMessage>
+</ValidationRule>

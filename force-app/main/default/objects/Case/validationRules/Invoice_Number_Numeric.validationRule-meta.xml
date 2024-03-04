@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Number_Numeric</fullName>
+    <active>true</active>
+    <description>Invoice Number should contain numeric digits only</description>
+    <errorConditionFormula>AND(
+
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+NOT(ISBLANK(Invoice_Number__c)),
+NOT(ISNUMBER(Invoice_Number__c))
+)</errorConditionFormula>
+    <errorDisplayField>Invoice_Number__c</errorDisplayField>
+    <errorMessage>Invoice Number must contain numbers only. Please update the value entered.</errorMessage>
+</ValidationRule>

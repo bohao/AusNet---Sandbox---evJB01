@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Inv_Base_for_Droop__c</fullName>
+    <description>DER Register Level 2 – AC Connection</description>
+    <externalId>false</externalId>
+    <label>Non-Inv Base for Droop (kVA)</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

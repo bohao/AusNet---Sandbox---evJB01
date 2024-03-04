@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Event_Rewards__c</fullName>
+    <description>Cumulative total of all participants rewards</description>
+    <externalId>false</externalId>
+    <label>Total Event Rewards</label>
+    <summarizedField>CampaignMember.Reward__c</summarizedField>
+    <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeofPremise__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Premise</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small business/industrial property (Less than 50kVA)</fullName>
+                <default>false</default>
+                <label>Small business/industrial property (Less than 50kVA)</label>
+            </value>
+            <value>
+                <fullName>Units/flats development</fullName>
+                <default>false</default>
+                <label>Units/flats development</label>
+            </value>
+            <value>
+                <fullName>Shopping centre/large retailer (Single/Multiple Installation)</fullName>
+                <default>false</default>
+                <label>Shopping centre/large retailer (Single/Multiple Installation)</label>
+            </value>
+            <value>
+                <fullName>Production facility</fullName>
+                <default>false</default>
+                <label>Production facility</label>
+            </value>
+            <value>
+                <fullName>EV charging Station</fullName>
+                <default>false</default>
+                <label>EV charging Station</label>
+            </value>
+            <value>
+                <fullName>Telecom facility (Single/Multiple Installations)</fullName>
+                <default>false</default>
+                <label>Telecom facility (Single/Multiple Installations)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Telecom facility (Single/Multiple Installation)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telecom facility (Single/Multiple Installation)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

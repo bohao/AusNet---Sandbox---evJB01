@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_claim_I_dont_have_an_email_address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Captures I don&apos;t have an email address checkbox from Claim form</description>
+    <externalId>false</externalId>
+    <label>I don&apos;t have an email address</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

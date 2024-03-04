@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cases_and_Status</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Region__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>DER_Application_Scenario__c</columns>
+    <columns>DER_Application_Size__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Meter_fx__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Existing_DER__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>Agreement_Type__c</columns>
+    <columns>AusNet_Owned_Meter__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,More Info Required,Invoice Pending,Technical Assessment,Offer Sent,Installation Pending,Installation Validation,Designer Validation,Publish,Reconfig,Cancelled,Complete</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>New,Replacement,Augmentation,Upgrade,Abolishment,Dummy,Other</value>
+    </filters>
+    <filters>
+        <field>Submission_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted with Exceptions,Submission Failed</value>
+    </filters>
+    <label>New Conns  Exception Management</label>
+    <sharedTo>
+        <role>DER_TVE_11_Manager</role>
+    </sharedTo>
+</ListView>

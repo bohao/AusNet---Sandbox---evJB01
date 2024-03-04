@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOpenCases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>DER_Application_Scenario__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Site_fx__c</columns>
+    <columns>Total_System_Capacity_fx__c</columns>
+    <columns>Total_System_Export_fx__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Agreement_Type__c</columns>
+    <columns>Applicant_Email__c</columns>
+    <columns>Applicant_Type__c</columns>
+    <columns>DER_Application__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Technical Assessment,Designer Validation</value>
+    </filters>
+    <filters>
+        <field>DER_Application_Scenario__c</field>
+        <operation>notEqual</operation>
+        <value>Auto</value>
+    </filters>
+    <filters>
+        <field>Total_System_Capacity_fx__c</field>
+        <operation>greaterThan</operation>
+        <value>30</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>ryan,coen</value>
+    </filters>
+    <label>All Open Cases (DER)</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

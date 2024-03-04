@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REMI_Triage_Required_Bank_Details</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DCP_Triage_Required__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.REMI_Bank_Details</value>
+    </filters>
+    <label>Triage Required Bank Details</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>REMI_HR_Admin_Supervisor</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

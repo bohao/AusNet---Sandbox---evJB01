@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remi_Employee_s_back_payment_acceptance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>I confirm that the information provided in this form is true and correct, and in providing this information I accept the back payment from AusNet in full and final settlement of any back payment due to me.</inlineHelpText>
+    <label>Employee&apos;s back payment acceptance</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

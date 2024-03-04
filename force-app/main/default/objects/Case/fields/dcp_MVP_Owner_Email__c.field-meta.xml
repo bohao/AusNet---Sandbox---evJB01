@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_MVP_Owner_Email__c</fullName>
+    <description>The email of the original owner of the case record. To be used for data migration from MVP to DER/TVE11 org.</description>
+    <externalId>true</externalId>
+    <label>MVP Owner Email</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

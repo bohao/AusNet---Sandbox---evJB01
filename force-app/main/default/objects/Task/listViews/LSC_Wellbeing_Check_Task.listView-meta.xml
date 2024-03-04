@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LSC_Wellbeing_Check_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>LSC Wellbeing Check Queue</label>
+    <queue>LSC_Wellbeing_Check</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

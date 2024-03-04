@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inv_Power_Factor_Quad_P2__c</fullName>
+    <description>DER Register Level 2 – AC Connection</description>
+    <externalId>false</externalId>
+    <label>Inv Power Factor Quadrant at P2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Source</fullName>
+                <default>false</default>
+                <label>Source</label>
+            </value>
+            <value>
+                <fullName>Sink</fullName>
+                <default>false</default>
+                <label>Sink</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

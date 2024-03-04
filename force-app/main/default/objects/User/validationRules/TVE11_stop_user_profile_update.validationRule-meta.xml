@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_stop_user_profile_update</fullName>
+    <active>true</active>
+    <description>TV-3036 (To stop customer community users from updating their Name, Email and mobile from &quot;My Profile&quot; page in customer community)</description>
+    <errorConditionFormula>AND(
+ 
+OR(
+ISCHANGED( FirstName ),
+ISCHANGED( LastName ), 
+ISCHANGED( MobilePhone ), 
+ISCHANGED( Email )
+),
+
+$Permission.Customer_Community_Update
+ 
+)</errorConditionFormula>
+    <errorMessage>First name, Last name, Email and Mobile fields cannot be updated directly by you, refer to the Help section for instructions on how to get this information updated.</errorMessage>
+</ValidationRule>

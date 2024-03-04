@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Offer Made</fullName>
+                <default>false</default>
+                <label>Offer Made</label>
+            </value>
+            <value>
+                <fullName>Offer Accepted</fullName>
+                <default>false</default>
+                <label>Offer Accepted</label>
+            </value>
+            <value>
+                <fullName>Offer Declined</fullName>
+                <default>false</default>
+                <label>Offer Declined</label>
+            </value>
+            <value>
+                <fullName>Offer Expired</fullName>
+                <default>false</default>
+                <label>Offer Expired</label>
+            </value>
+            <value>
+                <fullName>Contract Active</fullName>
+                <default>false</default>
+                <label>Contract Active</label>
+            </value>
+            <value>
+                <fullName>Contract Completed</fullName>
+                <default>false</default>
+                <label>Contract Completed</label>
+            </value>
+            <value>
+                <fullName>Contract Unauthorised</fullName>
+                <default>false</default>
+                <label>Contract Unauthorised</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

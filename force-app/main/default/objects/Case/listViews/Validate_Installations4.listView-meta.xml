@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Installations4</fullName>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>NMI_fx__c</columns>
+    <columns>Meter_fx__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Installation Validation</value>
+    </filters>
+    <filters>
+        <field>CASES.PRIORITY</field>
+        <operation>equals</operation>
+        <value>Low</value>
+    </filters>
+    <label>Validate Installations</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

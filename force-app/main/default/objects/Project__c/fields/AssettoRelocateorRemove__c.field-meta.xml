@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssettoRelocateorRemove__c</fullName>
+    <externalId>false</externalId>
+    <label>Asset to Relocate or Remove</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pole(s)</fullName>
+                <default>false</default>
+                <label>Pole(s)</label>
+            </value>
+            <value>
+                <fullName>Low voltage underground pit</fullName>
+                <default>false</default>
+                <label>Low voltage underground pit</label>
+            </value>
+            <value>
+                <fullName>Pillar</fullName>
+                <default>false</default>
+                <label>Pillar</label>
+            </value>
+            <value>
+                <fullName>Light pole</fullName>
+                <default>false</default>
+                <label>Light pole</label>
+            </value>
+            <value>
+                <fullName>Low voltage overhead service cable</fullName>
+                <default>false</default>
+                <label>Low voltage overhead service cable</label>
+            </value>
+            <value>
+                <fullName>KIOSK substation</fullName>
+                <default>false</default>
+                <label>KIOSK substation</label>
+            </value>
+            <value>
+                <fullName>Low voltage cabinet</fullName>
+                <default>false</default>
+                <label>Low voltage cabinet</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

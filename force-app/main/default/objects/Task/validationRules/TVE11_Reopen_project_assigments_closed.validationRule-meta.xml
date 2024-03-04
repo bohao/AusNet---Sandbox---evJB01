@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVE11_Reopen_project_assigments_closed</fullName>
+    <active>true</active>
+    <description>Validation rule to avoid the users can re-open Project Assignment Tasks</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName  = &apos;ProjectAssignment&apos;,   ISCHANGED(Status), ISPICKVAL(PRIORVALUE
+(Status), &apos;Completed&apos;))</errorConditionFormula>
+    <errorMessage>TASK_VR_001: It is not allowed to re-open project assignment tasks</errorMessage>
+</ValidationRule>

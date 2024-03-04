@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Application_fx__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(RecordType.DeveloperName,
+&apos;Device_L2&apos;, DER_Application__r.Name,
+&apos;Device_L3&apos;, Parent_Device__r.DER_Application__r.Name,
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DER-Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

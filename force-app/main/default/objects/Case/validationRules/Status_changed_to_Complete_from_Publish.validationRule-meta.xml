@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Complete_from_Publish</fullName>
+    <active>true</active>
+    <description>Case Completed from Publish when Publish is successful and Reconfig is NOT required.</description>
+    <errorConditionFormula>AND(
+
+    OR(
+        RecordType.Name = &quot;DER Application - Auto&quot;,
+        RecordType.Name = &quot;DER Application - Manual&quot;
+    ),
+
+    ISCHANGED(Status),
+    ISPICKVAL(Status, &quot;Complete&quot;),
+    ISPICKVAL(PRIORVALUE(Status), &quot;Publish&quot;),
+    NOT(ISPICKVAL(Type, &quot;Abolishment&quot;)),
+
+    OR(
+        AusNet_Owned_Meter__c = TRUE,
+        NOT(Contract_Status__c = &quot;Contract Active&quot;),
+
+        NOT(
+            OR(
+                ISPICKVAL(Submission_Status__c, &quot;Submitted Successfully&quot;),
+                ISPICKVAL(Submission_Status__c, &quot;Submitted with Exceptions&quot;),
+                ISPICKVAL(Submission_Status__c, &quot;Submission Not Required&quot;)
+            )
+        )
+    )
+
+)</errorConditionFormula>
+    <errorMessage>Case cannot be Completed as AEMO Submission Status is NOT &quot;Submitted Successfully&quot; or &quot;Submitted with Exceptions&quot;. 
+    Or Reconfig required as AusNet Owned Meter is ticked. DER Agreement Status must also = &quot;Contract Active&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SizeOfProposedDwelling__c</fullName>
+    <externalId>false</externalId>
+    <label>Size Of Proposed Dwelling</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than 12 Squares (&lt;110 sqm)</fullName>
+                <default>false</default>
+                <label>Less than 12 Squares (&lt;110 sqm)</label>
+            </value>
+            <value>
+                <fullName>Between 12-30 Squares (110 - 280 sqm)</fullName>
+                <default>false</default>
+                <label>Between 12-30 Squares (110 - 280 sqm)</label>
+            </value>
+            <value>
+                <fullName>Over 30 Squares (&gt;280 sqm)</fullName>
+                <default>false</default>
+                <label>Over 30 Squares (&gt;280 sqm)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

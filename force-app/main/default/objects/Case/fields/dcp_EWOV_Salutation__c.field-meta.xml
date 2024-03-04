@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_EWOV_Salutation__c</fullName>
+    <description>Captures salutation of the customer from the New Assisted Referral</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Captures salutation of the customer from the New Assisted Referral</inlineHelpText>
+    <label>Salutation</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

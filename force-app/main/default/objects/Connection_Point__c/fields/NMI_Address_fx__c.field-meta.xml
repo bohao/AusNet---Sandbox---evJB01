@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMI_Address_fx__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NMI_Ref__c != &quot;&quot;, 
+IF (NOT(ISBLANK(Building_Name__c)), Building_Name__c &amp; (&quot;, &quot;), &quot;&quot;) &amp;
+IF (NOT(ISNULL(House_Num_2__c)), House_Num_2__c &amp; &quot; &quot;, &quot;&quot;) &amp;
+IF (NOT(ISNULL(Floor__c)), Floor__c &amp; &quot; &quot;, &quot;&quot;) &amp;
+IF (NOT(ISNULL(Haus_Num_2__c)), Haus_Num_2__c &amp; &quot; &quot;, &quot;&quot;) &amp;
+IF (NOT(ISNULL(House_Num_1__c)), House_Num_1__c &amp; &quot; &quot;, &quot;&quot;) &amp;
+IF (NOT(ISNULL(Street__c)), Street__c, &quot;&quot;) &amp; (&quot;, &quot;) &amp;
+IF (NOT(ISNULL(City__c)), City__c &amp; (&quot;, &quot;), &quot;&quot;) &amp;
+IF (NOT(ISNULL(State__c)), State__c &amp; &quot; &quot;, &quot;&quot;) &amp;
+IF (NOT(ISNULL(Post_Code__c)), Post_Code__c, &quot;&quot;) &amp; (&quot;, &quot;)
+&amp; CASE(Country__c,&quot;AU&quot;,&quot;Australia&quot;,&quot; &quot;), 
+&quot;N/A&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NMI Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

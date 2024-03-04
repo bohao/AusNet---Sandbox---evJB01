@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Generate_Financial_Report</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Generate Financial Report</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!URLFOR(&apos;/apex/SDOC__SDCreate1&apos;, null,[id=&apos;5004a000008NtVYAA0&apos;, Object=&apos;Case&apos;, lightningnav=&apos;true&apos;])}</url>
+</WebLink>

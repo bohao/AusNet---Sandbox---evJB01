@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Ready_To_Submit</fullName>
+    <active>true</active>
+    <description>Validation required when application status is &apos;Publish&apos; and user updates AEMO Submission Status to &apos;Ready to Submit&apos;.</description>
+    <errorConditionFormula>AND(
+OR(
+RecordType.Name = &quot;DER Application - Auto&quot;,
+RecordType.Name = &quot;DER Application - Manual&quot;
+),
+    ISPICKVAL(Status, &apos;Publish&apos;),
+    ISPICKVAL(Submission_Status__c, &apos;Ready to Submit&apos;),
+    NOT(ISPICKVAL(Type, &apos;Abolishment&apos;)),
+
+    OR(
+        Contract_Status__c != &apos;Contract Active&apos;,
+        ISNULL(Contract_Active_Date__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Cannot set AEMO Submission Status to &quot;Ready To Submit&quot; without an active contract. 
+Please ensure Contract is set to Active and has Contract Active Date populated.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_changed_to_Publish</fullName>
+    <active>true</active>
+    <description>Case cannot be moved to Status Publish as Total System Capacity on the DER Application = 0, or the DER Agreement does not have Status &quot;Contract Active&quot;. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</description>
+    <errorConditionFormula>AND(
+
+    OR(
+        RecordType.Name = &quot;DER Application - Auto&quot;,
+        RecordType.Name = &quot;DER Application - Manual&quot;
+    ),
+
+    ISCHANGED(Status),
+    ISPICKVAL(Status, &quot;Publish&quot;),
+    NOT(ISPICKVAL(Type, &quot;Abolishment&quot;)),
+
+    OR(
+    NOT(Contract_Status__c = &quot;Contract Active&quot;) ,
+    DER_Application__r.Total_System_Capacity__c = 0
+    )
+
+
+)</errorConditionFormula>
+    <errorMessage>Case cannot be moved to Status Publish as Total System Capacity on the DER Application = 0, or the DER Agreement does not have Status &quot;Contract Active&quot;. The DER Agreement can be accessed from the DER Application or Account linked to this Case.</errorMessage>
+</ValidationRule>

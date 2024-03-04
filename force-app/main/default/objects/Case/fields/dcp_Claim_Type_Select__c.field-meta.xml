@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Claim_Type_Select__c</fullName>
+    <description>Type of Claim</description>
+    <externalId>false</externalId>
+    <label>Claim Type Select</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Complaint Settlement</fullName>
+                <default>false</default>
+                <label>Complaint Settlement</label>
+            </value>
+            <value>
+                <fullName>Outage</fullName>
+                <default>false</default>
+                <label>Outage</label>
+            </value>
+            <value>
+                <fullName>Power Surge</fullName>
+                <default>false</default>
+                <label>Power Surge</label>
+            </value>
+            <value>
+                <fullName>Public Liability</fullName>
+                <default>false</default>
+                <label>Public Liability</label>
+            </value>
+            <value>
+                <fullName>Telstra</fullName>
+                <default>false</default>
+                <label>Telstra</label>
+            </value>
+            <value>
+                <fullName>WVTNP</fullName>
+                <default>false</default>
+                <label>WVTNP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

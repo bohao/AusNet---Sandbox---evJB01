@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelationshipToOwner__c</fullName>
+    <externalId>false</externalId>
+    <label>Relationship To Owner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Registered Electrical Contractor (REC)</fullName>
+                <default>false</default>
+                <label>Registered Electrical Contractor (REC)</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Accredited Service Provider - AusNet Services</fullName>
+                <default>false</default>
+                <label>Accredited Service Provider - AusNet Services</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Family Member/Friend</fullName>
+                <default>false</default>
+                <label>Family Member/Friend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

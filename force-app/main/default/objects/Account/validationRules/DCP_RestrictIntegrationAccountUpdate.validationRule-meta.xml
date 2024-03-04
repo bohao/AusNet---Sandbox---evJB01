@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCP_RestrictIntegrationAccountUpdate</fullName>
+    <active>true</active>
+    <description>Restrict agent from updating account fields except ABN Number when account is created by integration user</description>
+    <errorConditionFormula>AND(OR(ISCHANGED(  Name  ) ,ISCHANGED(  ParentId ),ISCHANGED(  vlocity_cmt__PremisesId__c  ),ISCHANGED(  SAP_Business_Partner_Number__c  ),ISCHANGED( OwnerId ),ISCHANGED( vlocity_cmt__Status__c  ), ISCHANGED( Market_Identifier__c ) ,ISCHANGED( RecordTypeId ),ISCHANGED( vlocity_cmt__PrimaryContactId__c ),ISCHANGED( Phone  ),ISCHANGED( ShippingAddress)),CONTAINS( PRIORVALUE( DCP_accountOwnerProfile__c )  ,&apos;Integration&apos;),CONTAINS( $Profile.Name ,&apos;Contact Centre Agent&apos;))</errorConditionFormula>
+    <errorMessage>Agent cannot edit record owned by Integration User</errorMessage>
+</ValidationRule>

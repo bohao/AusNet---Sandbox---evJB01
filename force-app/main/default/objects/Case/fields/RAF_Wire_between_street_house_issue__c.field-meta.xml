@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAF_Wire_between_street_house_issue__c</fullName>
+    <externalId>false</externalId>
+    <label>Wire between street &amp; house issue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arching / Flashover</fullName>
+                <default>false</default>
+                <label>Arching / Flashover</label>
+            </value>
+            <value>
+                <fullName>Down</fullName>
+                <default>false</default>
+                <label>Down</label>
+            </value>
+            <value>
+                <fullName>Low hanging</fullName>
+                <default>false</default>
+                <label>Low hanging</label>
+            </value>
+            <value>
+                <fullName>Tree near or touching</fullName>
+                <default>false</default>
+                <label>Tree near or touching</label>
+            </value>
+            <value>
+                <fullName>Tree on</fullName>
+                <default>false</default>
+                <label>Tree on</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

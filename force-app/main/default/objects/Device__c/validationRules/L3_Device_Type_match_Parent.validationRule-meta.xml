@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L3_Device_Type_match_Parent</fullName>
+    <active>true</active>
+    <description>Device Type does not match the AC Equipment Sub-Type for inverter selected in the Parent Device field. Please enter the corresponding type e.g. Solar PV for a Solar Inverter / Battery for a Battery Inverter.</description>
+    <errorConditionFormula>OR(
+
+AND(
+RecordType.Name = &quot;DER Device - L3&quot;,
+ISPICKVAL(Parent_Device__r.AC_Equip_Sub_Type__c, &quot;Solar&quot;) ,  
+NOT(
+    OR(
+    ISPICKVAL(Device_Type__c, &quot;Solar PV&quot;),
+    ISPICKVAL(Device_Type__c, &quot;Battery&quot;)
+    )
+),
+NOT(Legacy_Data__c)
+),
+
+AND(
+RecordType.Name = &quot;DER Device - L3&quot;,
+NOT(ISPICKVAL(Parent_Device__r.AC_Equip_Sub_Type__c, &quot;Solar&quot;)),
+NOT(TEXT(Parent_Device__r.AC_Equip_Sub_Type__c) =  TEXT(Device_Type__c)),
+NOT(Legacy_Data__c)
+
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Device_Type__c</errorDisplayField>
+    <errorMessage>Device Type does not match the AC Equipment Sub-Type for inverter selected in the Parent Device field. Please enter the corresponding type e.g. Solar PV for a Solar Inverter / Battery for a Battery Inverter.</errorMessage>
+</ValidationRule>

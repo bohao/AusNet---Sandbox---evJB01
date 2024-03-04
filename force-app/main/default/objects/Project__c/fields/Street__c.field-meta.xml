@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Street__c</fullName>
+    <description>Street address for the applicant, for example, 475 Boardwalk Ave. Up to 255 characters are allowed in this field.</description>
+    <externalId>false</externalId>
+    <label>Street</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

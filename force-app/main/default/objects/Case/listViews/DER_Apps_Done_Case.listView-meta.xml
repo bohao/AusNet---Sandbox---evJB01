@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Apps_Done_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Existing_DER__c</columns>
+    <columns>Supply_Address_fx__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notContain</operation>
+        <value>Cancelled,Complete</value>
+    </filters>
+    <label>DER Apps - Done</label>
+    <queue>DER_Apps_Done</queue>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DER_TVE_11_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

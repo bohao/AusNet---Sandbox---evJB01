@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L3_Device_Sub_Type</fullName>
+    <active>true</active>
+    <description>Device Sub-Type is required when Device Type = “Solar PV” or “Battery”.
+For Solar PV, select a value between Monocrystalline --&gt; Cadmium telluride.
+For Battery, select a value between Lithium-ion --&gt; Electric Vehicle.
+Otherwise, leave blank.</description>
+    <errorConditionFormula>OR(
+
+	AND(
+		RecordType.Name = &quot;DER Device - L3&quot;,
+		ISPICKVAL(Device_Type__c, &quot;Solar PV&quot;),
+		NOT(
+			OR(
+				ISPICKVAL(Device_Sub_Type__c , &quot;Monocrystalline&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Polycrystalline&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Thin-film&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Concentrating PV&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Silicon&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Biohybrid&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Cadmium telluride&quot;)
+			)
+		),
+		Parent_Device__r.DER_Application__r.Case_Origin__c = &quot;Web&quot;,
+		NOT(Legacy_Data__c)
+	),
+
+	AND(
+		RecordType.Name = &quot;DER Device - L3&quot;,
+		ISPICKVAL(Device_Type__c, &quot;Battery&quot;),
+		NOT(
+			OR(
+				ISPICKVAL(Device_Sub_Type__c , &quot;Lithium-ion&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Lead acid&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Lead carbon sodium nickel&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Lead crystal&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Absorbed glass matt&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Vanadium&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Aqueous hybrid ion&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Tubular gel&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Zinc bromide&quot;),
+				ISPICKVAL(Device_Sub_Type__c , &quot;Electric Vehicle&quot;)
+			)
+		),
+		Parent_Device__r.DER_Application__r.Case_Origin__c = &quot;Web&quot;,
+		NOT(Legacy_Data__c)
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Device_Sub_Type__c</errorDisplayField>
+    <errorMessage>Device Sub-Type is required when Device Type = “Solar PV” or “Battery”.
+For Solar PV, select a value between Monocrystalline --&gt; Cadmium telluride.
+For Battery, select a value between Lithium-ion --&gt; Electric Vehicle.
+Otherwise, leave blank.</errorMessage>
+</ValidationRule>

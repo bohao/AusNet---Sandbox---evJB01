@@ -1,0 +1,1958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_EWOV</fullName>
+    <active>true</active>
+    <businessProcess>DCP Support Process</businessProcess>
+    <compactLayoutAssignment>Default_Compact_Layout</compactLayoutAssignment>
+    <description>All EWOV cases</description>
+    <label>EWOV</label>
+    <picklistValues>
+        <picklist>Agreement_Type__c</picklist>
+        <values>
+            <fullName>Basic Micro EG MSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiated %3E5MW NEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiated %3E5MW NEA%26NMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiated 0-5MW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Applicant_Type__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cancelled_Reason__c</picklist>
+        <values>
+            <fullName>Applicant Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AusNet Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorised</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DER_Application_Scenario__c</picklist>
+        <values>
+            <fullName>Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FE_Communication_Client_Installed__c</picklist>
+        <values>
+            <fullName>Droplet %28gateway solution%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not installed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FnP_DCP_SubType__c</picklist>
+        <values>
+            <fullName>Compliment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Outage Preference Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tariffs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unplanned Outages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vegetation Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>myHomeEnergy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FnP_Type_of_Fault__c</picklist>
+        <values>
+            <fullName>DimLight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FlickeringLight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LightIsOn24%2F7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LightIsOut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Able_to_provide_NMI_or_meter_number__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Anyone_reliant_on_life_supprt_device__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Anything_impacting_property_access__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Best_description_of_situation__c</picklist>
+        <values>
+            <fullName>Arching %2F Flashover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car hit a power pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged or broken cross arm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fallen power pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fallen powerline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaning power pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low hanging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low hanging powerline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tight wire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree branch fallen on or touching a powerline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree fallen on powerline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree near or touching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree on</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Meter_condition__c</picklist>
+        <values>
+            <fullName>Meter is blank %2F dials not spinning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter is not blank but I still don%E2%80%99t have power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None of the above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The issue has been resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Most_appropriate_power_pole_issue__c</picklist>
+        <values>
+            <fullName>Broken Crossarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car hit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuse Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Most_appropriate_street_wire_issue__c</picklist>
+        <values>
+            <fullName>Arching %2F Flashover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low hanging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tight wire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree near or touching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree on</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Preferred_method_of_contact__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Reporting_fault_on_personal_property__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Switchboard_Condition__c</picklist>
+        <values>
+            <fullName>None of the above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switches are all on but I still don%E2%80%99t have power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The issue has been resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The safety switch keeps turning off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Type_of_Situation_Peronal_Prpty__c</picklist>
+        <values>
+            <fullName>Entire house is without power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lights are dim or flickering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only some appliances have power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power goes on and off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Type_of_situation_outside_property__c</picklist>
+        <values>
+            <fullName>Damaged or faulty powerline between your house and street</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged or faulty powerline on street</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged power poles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faulty or damaged streetlight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underground cable is damaged or dug up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAF_Wire_between_street_house_issue__c</picklist>
+        <values>
+            <fullName>Arching %2F Flashover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low hanging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree near or touching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tree on</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECN_REC_Info_provided_to_customer__c</picklist>
+        <values>
+            <fullName>Copy left on site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic copy emailed to customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECN_Reconnection_timeframe_requested__c</picklist>
+        <values>
+            <fullName>Next available time %28after hours fees may apply%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next available time during business hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>REMI_HELP_VSL_FS_SSL_TSL__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>REMI_Theme__c</picklist>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EA%2FIEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBA - APESMA%2FASU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBA - ETU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBA - GAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBA - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Progress of Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxation %26 Super</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time and attendance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Are_You__c</picklist>
+        <values>
+            <fullName>A foreign resident for tax purposes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A working holiday maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>An Australian Resident for tax purposes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Claim_seniors_and_pensioners__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Employee_Status__c</picklist>
+        <values>
+            <fullName>a member of a couple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a member of an illness-separated couple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_SG_Component_to_be__c</picklist>
+        <values>
+            <fullName>The Australian Prudential Regulation Authority %28APRA%29 fund or Retirement Savings Account %28RSA%29 I nominate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The self-managed super fund %28SMSF%29 I nominate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Want_tax_free_threshhold__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Want_taxed_on_highest_tax_bracket__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remi_Want_to_claim_or_vary_your_tax_ofst__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Responsible_Party__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Submission_Status__c</picklist>
+        <values>
+            <fullName>Ready to Submit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to EAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted Successfully</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted with Exceptions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>EWOV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Case_Outcome__c</picklist>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educated Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External referral - Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External referral - Downer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External referral - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External referral - Veg Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Further Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Case_Reason__c</picklist>
+        <values>
+            <fullName>Abolishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AusNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Reclose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bollards required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim%2FDamage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor%2FAusNet Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costs %2F fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costs incurred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage due to 3rd party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay - Meter Fix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay - New Estates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay - No Brainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay - Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Partner %28Field%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not proceed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easement Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimate Restoration Times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated Reads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated%2F Substituted data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fault Restoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faulty Asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frequency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Reinstatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gates left open %2F not secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Account - Gas Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inconvenience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect position</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low voltage supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mains Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malfunction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Position Alteration %28MAP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter Reader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter faulty%2Fnoisy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter stolen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noisy Transformer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non AusNet Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Engaged in Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off peak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Spill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poles %26 Wires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinstatement and cleanup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Offer Compliment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smell of Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Meter%2FConnection delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2FRadio Interference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Overrun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underground Pit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vegetation Impacting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage dips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage spike %28impulsive transient%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage swell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weather%2Flightning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Claim_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready to Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Claim_Type_Select__c</picklist>
+        <values>
+            <fullName>Complaint Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Surge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telstra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WVTNP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Compcode__c</picklist>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Cost_Center__c</picklist>
+        <values>
+            <fullName>12510</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13175</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22175</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23175</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Customer_Segment__c</picklist>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Customer_Type__c</picklist>
+        <values>
+            <fullName>Electricity</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WVTNP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Depot_Area__c</picklist>
+        <values>
+            <fullName>Bairnsdale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bass Coast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beaconsfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benalla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lilydale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seymour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Morang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traralgon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wodonga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_EWOV_Level__c</picklist>
+        <values>
+            <fullName>Assisted Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_ElecGas_Complaint_Category__c</picklist>
+        <values>
+            <fullName>Access to property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset - Elec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset - Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Reclose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Metering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Error - Not AusNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Installation Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage - Costs%2FFees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dial Before You Dig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnection in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GSL Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Reinstatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Relight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helicopter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance letter request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logical Conversion Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mains Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter - Elec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter - Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missed Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Connection - Elec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Connection - Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Incident Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POEL - Private Overhead Electric Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privacy Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Meter Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tariff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truck Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unplanned Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vegetation Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water in Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western Vic %28WVTNP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Practices</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_GLCode__c</picklist>
+        <values>
+            <fullName>521601</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>521602</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Payment_Type__c</picklist>
+        <values>
+            <fullName>Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Residency_Status__c</picklist>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tenant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Risk__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Sub_Status__c</picklist>
+        <values>
+            <fullName>Awaiting Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complex Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DELWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigated - Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_Validation_Code__c</picklist>
+        <values>
+            <fullName>Invalid NMI Checksum combination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METER is unsupported%2E Is not a remotely read Type 5 meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter not in ADW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMI and METER exist but do not have a relationship with each other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMI not in ADW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMI timeslice matching the customer details is older than 25 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name does not align to NMI%2FMeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neither name nor phone number align to NMI%2FMeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone does not align to NMI%2FMeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_claim_Title__c</picklist>
+        <values>
+            <fullName>Dr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr %26 Mrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dcp_w2c_Enquiry_Type__c</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>myHomeEnergy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__Reason__c</picklist>
+        <values>
+            <fullName>Account info in blacklist removal request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account requires credit evaluation exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adress does not have pre-feasibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of mobile due to malfunction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generate a bill copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generate consumption details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry about campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry about plan details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry about promotion details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry service pre-feasibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem creating account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem receiving bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with CPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with IMEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with SIM unlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with add-on creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with add-on registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with automatic payment configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with bill adjustment and refunds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with bill explanation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with bill payment receipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of MSISDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of SIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of billing cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of customer information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of mobile phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of ownership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change of plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with change to retention plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with credit card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with friends and family number configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with impairment accessibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with managing users</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with mobile configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with port-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with port-out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with recurring discounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with repair pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with roaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with service consumption details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with service restoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with suspensions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with top up registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with top-up creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with transferring credit between accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with usage thresholds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with voice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with voluntary suspension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request change plan terms and conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request mobile on loan while repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request supervisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Require assistance with self service portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suggestions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unacknowledged change of plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unacknowledged purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unacknowledged termination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__Severity__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

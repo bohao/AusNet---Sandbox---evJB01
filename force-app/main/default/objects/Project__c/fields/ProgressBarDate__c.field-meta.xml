@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProgressBarDate__c</fullName>
+    <description>Used to store the last date when the progress bar status field was updated.</description>
+    <externalId>false</externalId>
+    <label>Progress Bar Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

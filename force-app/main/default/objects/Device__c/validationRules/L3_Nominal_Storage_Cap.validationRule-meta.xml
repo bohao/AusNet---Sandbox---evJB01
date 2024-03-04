@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L3_Nominal_Storage_Cap</fullName>
+    <active>false</active>
+    <description>Nominal Storage Capacity (kWh) is required when Device Type = &quot;Battery&quot;, otherwise leave blank.</description>
+    <errorConditionFormula>OR(
+
+AND(
+RecordType.Name = &quot;DER Device - L3&quot;,
+ISPICKVAL(Device_Type__c, &quot;Battery&quot;),
+ISBLANK(Nominal_Storage_Cap__c),
+NOT(Legacy_Data__c)
+),
+
+AND(
+RecordType.Name = &quot;DER Device - L3&quot;,
+NOT(ISPICKVAL(Device_Type__c, &quot;Battery&quot;)),
+NOT(ISBLANK(Nominal_Storage_Cap__c)),
+NOT(Legacy_Data__c)
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Nominal_Storage_Cap__c</errorDisplayField>
+    <errorMessage>Nominal Storage Capacity (kWh) is required when Device Type = &quot;Battery&quot;, otherwise leave blank.</errorMessage>
+</ValidationRule>

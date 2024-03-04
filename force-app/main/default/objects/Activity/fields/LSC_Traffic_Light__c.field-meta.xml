@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LSC_Traffic_Light__c</fullName>
+    <description>Show coloured light (icon or graphic) based on criteria
+• Red when task age &gt;= 20 hours old
+• Orange when age &gt;= 11 hour
+• Yellow when age &gt;= 8 hours
+• Green when age &lt; 8 hours</description>
+    <externalId>false</externalId>
+    <formula>IF(Task_Age__c &lt; 8, &apos;🟢 Green&apos;, IF(Task_Age__c &gt;=8 &amp;&amp; Task_Age__c &lt;11,&apos;🟡 Yellow&apos;, IF(Task_Age__c&gt;=11 &amp;&amp; Task_Age__c&lt;20, &apos;🟠 Orange&apos;,&apos;🔴 Red&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Traffic Light</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

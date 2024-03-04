@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment_Message</fullName>
+    <active>true</active>
+    <label>Segment Message</label>
+    <picklistValues>
+        <picklist>Notification_Preference__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS %2B Email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>et4ae5__Activity__c</picklist>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>uom_Incident_Status__c</picklist>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restored</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

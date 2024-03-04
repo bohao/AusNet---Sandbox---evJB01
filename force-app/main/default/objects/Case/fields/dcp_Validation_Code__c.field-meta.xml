@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Validation_Code__c</fullName>
+    <description>Captures validation code / error messages from storm submissions</description>
+    <externalId>false</externalId>
+    <label>Validation Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phone does not align to NMI/Meter</fullName>
+                <default>false</default>
+                <label>Phone does not align to NMI/Meter</label>
+            </value>
+            <value>
+                <fullName>Invalid NMI Checksum combination</fullName>
+                <default>false</default>
+                <label>Invalid NMI Checksum combination</label>
+            </value>
+            <value>
+                <fullName>Neither name nor phone number align to NMI/Meter</fullName>
+                <default>false</default>
+                <label>Neither name nor phone number align to NMI/Meter</label>
+            </value>
+            <value>
+                <fullName>NMI timeslice matching the customer details is older than 25 months</fullName>
+                <default>false</default>
+                <label>NMI timeslice matching the customer details is older than 25 months</label>
+            </value>
+            <value>
+                <fullName>NMI and METER exist but do not have a relationship with each other</fullName>
+                <default>false</default>
+                <label>NMI and METER exist but do not have a relationship with each other</label>
+            </value>
+            <value>
+                <fullName>NMI not in ADW</fullName>
+                <default>false</default>
+                <label>NMI not in ADW</label>
+            </value>
+            <value>
+                <fullName>Name does not align to NMI/Meter</fullName>
+                <default>false</default>
+                <label>Name does not align to NMI/Meter</label>
+            </value>
+            <value>
+                <fullName>Meter not in ADW</fullName>
+                <default>false</default>
+                <label>Meter not in ADW</label>
+            </value>
+            <value>
+                <fullName>METER is unsupported. Is not a remotely read Type 5 meter</fullName>
+                <default>false</default>
+                <label>METER is unsupported. Is not a remotely read Type 5 meter</label>
+            </value>
+            <value>
+                <fullName>Success</fullName>
+                <default>false</default>
+                <label>Success</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

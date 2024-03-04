@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dcp_Initial_Claim_Amount__c</fullName>
+    <description>Initial amount claimed by customer</description>
+    <externalId>false</externalId>
+    <label>Initial Claim Amount</label>
+    <summarizedField>dcp_Claim_Item__c.dcp_Claim_Amount__c</summarizedField>
+    <summaryForeignKey>dcp_Claim_Item__c.dcp_Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

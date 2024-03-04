@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DER_Application_Size__c</fullName>
+    <description>Indicates on Case the size of the related DER Application</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+
+AND(DER_Application__r.Total_System_Capacity__c  &gt;0.000, DER_Application__r.Total_System_Capacity__c  &lt;=30.000), 
+&quot;&lt; 30&quot;, 
+
+IF(AND(DER_Application__r.Total_System_Capacity__c  &gt;30.000, DER_Application__r.Total_System_Capacity__c  &lt;150.000),
+&quot;&gt; 30&quot;,
+
+IF(DER_Application__r.Total_System_Capacity__c  &gt;=150.000, 
+&quot;&gt; 1.5&quot;, &quot;&quot;)
+
+) 
+
+)</formula>
+    <inlineHelpText>This is displayed based on the Total System Capacity listed on the related DER Application.</inlineHelpText>
+    <label>DER Application Size</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

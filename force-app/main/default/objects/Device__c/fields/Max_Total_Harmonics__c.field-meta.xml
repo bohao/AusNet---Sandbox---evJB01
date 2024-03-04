@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Total_Harmonics__c</fullName>
+    <description>Level 2 Details
+Relevant to &gt;30 Connections</description>
+    <externalId>false</externalId>
+    <label>Maximum Total Harmonics (%)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REMI_Division__c</fullName>
+    <description>Stores REMI employee division details</description>
+    <externalId>false</externalId>
+    <label>Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>People Sustainability &amp; Transformation</fullName>
+                <default>false</default>
+                <label>People Sustainability &amp; Transformation</label>
+            </value>
+            <value>
+                <fullName>Network Management &amp; Digital</fullName>
+                <default>false</default>
+                <label>Network Management &amp; Digital</label>
+            </value>
+            <value>
+                <fullName>Development &amp; Future Networks</fullName>
+                <default>false</default>
+                <label>Development &amp; Future Networks</label>
+            </value>
+            <value>
+                <fullName>Network Operations &amp; Safety</fullName>
+                <default>false</default>
+                <label>Network Operations &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>Governance</fullName>
+                <default>false</default>
+                <label>Governance</label>
+            </value>
+            <value>
+                <fullName>Strategy and Regulations</fullName>
+                <default>false</default>
+                <label>Strategy and Regulations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
