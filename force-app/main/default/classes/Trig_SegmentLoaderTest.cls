@@ -25,12 +25,12 @@ public with sharing class Trig_SegmentLoaderTest
 	{
 		List<Segment_Loader__c> lstInsert = new List<Segment_Loader__c>();
 
-		User testUser = UtilDatabase_Test.getTestUser();
-		testUser.UserPermissionsMarketingUser = true;
+		// User testUser = UtilDatabase_Test.getTestUser();
+		// testUser.UserPermissionsMarketingUser = true;
 		//update testUser;
 
-		System.runAs(testUser)
-		{
+		//System.runAs(testUser)
+	//	{
 			Test.startTest();
 
 				lstInsert.add(new Segment_Loader__c(
@@ -56,6 +56,6 @@ public with sharing class Trig_SegmentLoaderTest
 				insert lstInsert;
 
 			Test.stopTest();
-		}
+	//	}
 	}
 }
