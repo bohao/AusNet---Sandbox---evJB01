@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Campaign_Name__c</columns>
+    <columns>Baseline__c</columns>
+    <columns>Duration__c</columns>
+    <columns>Email__c</columns>
+    <columns>Event_Id__c</columns>
+    <columns>Mobile__c</columns>
+    <columns>NMI__c</columns>
+    <columns>Participant_First_Name__c</columns>
+    <columns>Participant_Id__c</columns>
+    <columns>Participant_Last_Name__c</columns>
+    <columns>Performance__c</columns>
+    <columns>Start_DateTime__c</columns>
+    <columns>Retailer_Id__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>
