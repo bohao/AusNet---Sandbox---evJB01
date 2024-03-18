@@ -10,5 +10,5 @@
     <openType>sidebar</openType>
     <protected>false</protected>
     <requireRowSelection>true</requireRowSelection>
-    <url>/dataImporter/dataimporter.app?objectSelection=Segment_Loader__c</url>
+    <url>/dataImporter/dataimporter.app?objectSelection=Segment_Loader__c,Tariff_Trial__c</url>
 </WebLink>
