@@ -15,6 +15,7 @@ public with sharing class TariffTrial_CampaignUtil {
 
         // Step 2: Query matching accounts based on NMIs
         // TODO: need to extend query conditions
+        // Note: there is a risk if the account doesn't have a contact
         Map<String, Account> nmiToAccountMap = new Map<String, Account>();
         for (Account acc : [SELECT Id, vlocity_cmt__PrimaryContactId__c, Market_Identifier__r.vlocity_cmt__MarketIdentifier__c
                             FROM Account 
@@ -69,7 +70,7 @@ public with sharing class TariffTrial_CampaignUtil {
                 CampaignMember newMember = new CampaignMember(
                     CampaignId = campaign.Id,
                     Participant_Id__c = participantId,
-                    ContactId = matchingAccount.vlocity_cmt__PrimaryContactId__c,
+                    ContactId = matchingAccount.vlocity_cmt__PrimaryContactId__c, 
                     First_Name__c = tariffTrial.Participant_First_Name__c, 
                     Last_Name__c = tariffTrial.Participant_Last_Name__c,
                     Retailer_Id__c = tariffTrial.Retailer_Id__c,
